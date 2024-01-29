@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 
 
 
@@ -10,7 +10,7 @@ export default function calculator() {
     const [input, setInput] = useState<string>('');
     const [result, setResult] = useState<number | null>(null);
 
-    const handleButtonClick = (value: string) => {
+    const handleButtonClick = (value: string | number ) => {
         setInput((prevInput) => prevInput + value);
     };
     
@@ -29,31 +29,52 @@ export default function calculator() {
     };
 
   return (
-    <div className='calculator-Main'>
+    <Container className='calculator-Main vw-100'>
+        <div className='calcualtor-innerMain'>
         <div className='calculator-Title'>
                 <h1>
                     CALCULATOR
                 </h1>
         </div>
 
-        <div>
+        <div className='calculator-Input'>
             <InputGroup className="mb-3">
-            <Form.Control type="text" value={result !== null ? result : 0 || input} readOnly aria-label="Result" />
+            <Form.Control className='calculator-textRight' type="text" value={result !== null ? result : 0 || input} readOnly aria-label="Result" />
             </InputGroup>
          </div>
 
-        <div>
-        <Button variant='dark' onClick={handleClear}>C</Button>
-        <Button variant="dark" onClick={handleClear}>+/-</Button>
-        {[ '%','/', 7, 8, 9, '*',4, 5, 6,'-', 1, 2, 3, '+', 0, '.'].map((item) => (
-          <Button key={item} variant={typeof item === 'number' ? 'secondary': item == '%' ? 'dark' : 'warning' } onClick={() => handleButtonClick(item.toString())}>
-            {item}
-          </Button>
+        <div className='calculator-Numbers'>
+        <div className="calculator-buttonNumber">
+            {[ 'C', '+/-','%','/', 7, 8, 9, '*',4, 5, 6,'-', 1, 2, 3, '+', 0, '.', '='].map((item, index) => (
+            <Button key={item} className={index % 4 === 3 ? 'calculator-Last' : 'calculator-First'} 
+            
+            variant={
+                typeof item === 'number' ? 'secondary': 
+                item == '/' || item === '*' || item === '+' || item === '-' || item == '.' || item == '=' ? 'warning' : 'dark' 
+                } 
+            
+            onClick={() => {
+                        if (typeof item === 'string'){
+                            if (item === '='){
+                                handleCalculate();
+                            }else if (item === 'C'){
+                                handleClear();
+                            }else{
+                                handleButtonClick(item)
+                            }
+                        }else {
+                            handleButtonClick(item.toString())
+                        }
+                    }
+                    }>
+                {item}
+            </Button>
         ))}
-        <Button variant="warning" onClick={handleCalculate}>=</Button>
+        </div>
       </div>
+        </div>
 
-    </div>
+    </Container>
 
 
     

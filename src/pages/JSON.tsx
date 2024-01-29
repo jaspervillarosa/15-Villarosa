@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, Container, ListGroup } from 'react-bootstrap';
 
 
 interface User {
@@ -27,20 +27,20 @@ export default function JSON() {
     }, []);
 
     if (userData.length === 0){
-        return <div>Loading ... </div>
+        return <div></div>
     }
   return (
 
-    <div className="JSON-main">
+    <Container className="json-Main vw-100">
          <div className='title'>
             <h1>
                 USER INFORMATION
             </h1>
         </div>
-   
-        <Card style={{width: "18rem"}}> 
-            {userData.map((user) => (
-            <>
+    <div className="json-insideMain">
+    {userData.map((user) => (
+        <>
+        <Card className='json-Card' style={{width: "18rem"}}> 
             <Card.Body>
                     <Card.Title>{user.name}</Card.Title>
                     <Card.Subtitle className='mb-2 text-muted'>
@@ -49,17 +49,19 @@ export default function JSON() {
                     <Card.Text>
                         Email: {user.email}
                     </Card.Text>
-            </Card.Body>
-            <ListGroup className='List group-flush'>
+                    <ListGroup className='List group-flush'>
                         <ListGroup.Item>Street: {user.address.street}</ListGroup.Item>
                         <ListGroup.Item>Suite: {user.address.suite}</ListGroup.Item>
                         <ListGroup.Item>City: {user.address.city}</ListGroup.Item>
                         <ListGroup.Item>Zipcode: {user.address.zipcode}</ListGroup.Item>
             </ListGroup>
-            </>
-            ))}
+            </Card.Body>
         </Card>
+        </>
+        ))}
     </div>
+    
+    </Container>
    
   )
 }

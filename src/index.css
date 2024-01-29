@@ -22,14 +22,20 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* body,html {
+  border: solid blue;
+  width: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
+body{
+  min-height: 100vh;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -65,4 +71,124 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* ******************* HOME **************  */
+
+.home-Main{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.home-innerMain{
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-Card{
+  margin-block: 2rem;
+  margin-inline: auto;
+  width: 50% !important;
+  text-align: left;
+
+}
+
+.home-Headline{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+
+.home-Buttons{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.home-insideButton{
+  width: 100%;
+}
+
+/* *********CALCULATOR************** */
+@media (min-width:  768px){
+  .calculator-Input{
+    width: 30%;
+    margin: auto;
+  }
+  
+  .calculator-Numbers{
+    width: 30%;
+    margin: auto;
+  }
+  
+  .calculator-Title{
+    width: 30%;
+    margin: auto;
+  }
+  
+}
+.calculator-Main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.calculator-innerMain{
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.calculator-buttonNumber{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calculator-Last{
+  width: calc(23%);
+  margin-bottom: 10px;
+  padding-block: 0.5rem;
+}
+
+.calculator-First{
+  width: calc(25%);
+  margin-bottom: 10px;
+  padding-block: 0.5rem;
+}
+
+.calculator-textRight{
+  text-align: right;
+}
+
+/* **********JSON*************** */
+
+.json-Main{
+  margin: auto;
+  border: solid white
+}
+.json-insideMain{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.json-Card{
+  width: 10rem;
+  margin: 10px; /* Adjust as needed */
 }
