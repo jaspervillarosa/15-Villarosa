@@ -245,11 +245,18 @@ button:focus-visible {
 
 /* *********CALCULATOR************** */
 @media (min-width:  700px){
-  .calculator-Input{
-    width: 20%;
+  .calculator-inputContent{
+    width: 20% !important;
+    padding-top: 3rem;
+    font-size: 2rem;
+    border-radius: 10px 10px 0px 0px !important;
+    text-align: right !important;
+    background-color: #3C3C3C;
     margin: auto;
+    color: white !important;
+    border-color: 1px solid black !important;
   }
-  
+
   .calculator-Numbers{
     width: 20%;
     margin-right: auto;
@@ -277,7 +284,7 @@ button:focus-visible {
   
 }
 .calculator-innerMain{
-  border: solid blue !important;
+  border: transparent !important;
   padding: auto;
   width: 100%;
   display: flex;
@@ -288,7 +295,10 @@ button:focus-visible {
   width: 100%;
   padding-top: 3rem;
   font-size: 2rem;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px !important;
+  text-align: right !important;
+  background-color: #3C3C3C;
+  color: white !important;
 }
 .calculatorContainer{
   border: solid red !important;
