@@ -1,45 +1,57 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Col, Row } from 'react-bootstrap';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function home() {
   return (
-    <Container className='home-Main vw-100'>
+    <div className='home-Main'>
+    <Header/>
         <Row className='d-flex justify-content-center'>
             <Col className='text-center justify-content-center home-innerMain'>
-                <div className="home-Headline">
-                <div className='title'>
-                    <h1>
-                        DIGITAL TRANSFORMATION
-                    </h1>
+            <div className="home-mainContainer">
+                <div className="home-myHobbies myHobbies">
+                <div className="homeContent">
+                    <h3>
+                    Hey there, <br></br>
+                    <br />
+                    I'm Aileen. I'm interested in designing meaningful experiences that shape how we interact with technology. 
+                    <br /><br />
+                    ‍
+                    I'm currently designing experiences to make Amazon a better place to discover and research products. 
+                    <br />
+                    <br />
+
+                    Previously, I studied Communication Design at BTK Berlin, where I wrote my thesis on the effects of biases in design. Before that, I worked with brands to create digital products at Edenspiekermann. 
+                    I spend my time taking photos, drawing, and exploring places. 
+                    <br />
+                    <br />
+                    
+                    Let's chat — hello@aileen.co
+                    <br></br>
+                    <br />
+                    <a href='./MyHobby'>Learn More</a>
+                    </h3>
                 </div>
-                <div className='myName'>
-                        <h2>
-                            Created by <Badge bg="secondary">Jasper Villarosa</Badge>
-                        </h2>
                 </div>
-                <div className="home-Buttons">
-                    <Button className='home-insideButton' variant="light" href='./Calculator'>Calculator Sample</Button>{' '}
-                    <Button className='home-insideButton' variant="dark" href='./JSON'>JSON Sample</Button>
+                <div className="home-phoneImage">
+                    <img className='home-imgPhone' src="src/image/phoneGraphics.png" alt="" />
                 </div>
-                </div>  
-            <div className="myHobbies">
-            <Card className='home-Card' style={{ width: '18rem' }}>
-            <Card.Body className='home-Cardbody'>
-                <Card.Title>My Hobbies</Card.Title>
-                <Card.Text>
-                Hey there! Ready to embark on a journey through my interests? Click the button below to uncover the fascinating world of my hobbies, and who knows, we might just discover some shared passions! Get ready for a laugh and a peek into what makes me tick!
-                </Card.Text>
-                <Button variant="secondary" href='./MyHobby'>Learn More</Button>
-            </Card.Body>
-            </Card>
             </div>
-            </Col>
+            <div className="home-Headline">
+                <div className='homeTitle'>
+                    <h1>
+                        Digital Transformation
+                    </h1>
+                    <h5>Design and more</h5>
+                </div>
                 
+                </div>  
+
+            </Col>
         </Row>
-    </Container>
+        <Footer></Footer>
+    </div>
 
 
   )

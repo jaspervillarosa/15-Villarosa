@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Card, Container, ListGroup } from 'react-bootstrap';
+import { Button, Card, ListGroup, Nav } from 'react-bootstrap';
+import Footer from '../components/Footer';
+// import { Avatar, AvatarGroup } from '@mui/material';
 
 
 interface User {
@@ -31,7 +33,20 @@ export default function JSON() {
     }
   return (
 
-    <Container className="json-Main vw-100">
+    <div className="json-Main">
+        <div className="hobby-Innermain">
+        <Nav className='hobby-Nav'
+            activeKey="/home"
+            onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+            >
+            <Nav.Item>
+                <Button className='hobby-Calculator' href="/Calculator">calculator</Button>
+            </Nav.Item>
+            <Nav.Item>
+                <Button className='hobby-JSON' href='/JSON'><del>JSON</del></Button>
+            </Nav.Item>
+        </Nav>
+      </div>
          <div className='title'>
             <h1>
                 USER INFORMATION
@@ -42,10 +57,15 @@ export default function JSON() {
         <>
         <Card className='json-Card' style={{width: "18rem"}}> 
             <Card.Body>
+                <div className="JSON-userProfile">
+                    <div className="JSON-profileImage">{user.id}</div>
+                    <div className="JSON-otherProfile">
                     <Card.Title>{user.name}</Card.Title>
                     <Card.Subtitle className='mb-2 text-muted'>
                         Username: {user.username}
                     </Card.Subtitle>
+                    </div>
+                </div>
                     <Card.Text>
                         Email: {user.email}
                     </Card.Text>
@@ -60,8 +80,8 @@ export default function JSON() {
         </>
         ))}
     </div>
-    
-    </Container>
+    <Footer></Footer>
+    </div>
    
   )
 }

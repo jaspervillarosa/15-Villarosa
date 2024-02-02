@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,25 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 a {
@@ -47,7 +66,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: sans-serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -77,14 +96,120 @@ button:focus-visible {
 
 .home-Main{
 
-  height: 100vh;
+  border: solid red;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 
 }
+@media (max-width:  768px){
+  .home-mainContainer{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .home-phoneImage{
+    border: solid green;
+    width: 100%;
+  }
+  .home-myHobbies{
+    width: 100% !important;
+    border: solid red;
+  }
+  .home-phoneImage{
+    border: solid green;
+    width: 100% !important;
+  }
+  .hobby-Footer{
+    display: flex;
+    flex-direction: column;
+    border: solid blue;
+    width: 100%;
+    align-items: left !important;
+    justify-content: left !important;
+  }
+  .hobby-Footer{
+    display: flex;
+    gap: 4rem;
+    border: solid blue;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+}
+.hobby-Footer{
+  display: flex;
+  gap: 0rem !important;
+  border: solid blue;
+
+}
+.hobby-Footer div{
+  border: solid violet;
+  width: 100%;
+  height: 0rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 3rem !important;
+}
+}
+.home-Headline{
+  border: solid orange;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  padding-block: 8rem;
+}
+.homeTitle{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border: solid green;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+.homeTitle h5{
+  color: #BAB9B9;
+}
+.home-mainContainer{
+  border: solid yellow;
+  display: flex;
+}
+.home-phoneImage{
+  border: solid green;
+  width: 50%;
+}
+.home-imgPhone{
+  width: 400px;
+  height: auto;
+}
+.home-myHobbies{
+  width: 50%;
+  border: solid red;
+
+}
+.homeContent{
+  border: solid violet;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  text-align: left;
+  text-justify: inter-word;
+}
+
 
 .home-innerMain{
+  border: solid blue;
   margin: auto;
   padding: auto;
   width: 100%;
@@ -119,15 +244,19 @@ button:focus-visible {
 }
 
 /* *********CALCULATOR************** */
-@media (min-width:  768px){
+@media (min-width:  700px){
   .calculator-Input{
-    width: 30%;
+    width: 20%;
     margin: auto;
   }
   
   .calculator-Numbers{
-    width: 30%;
-    margin: auto;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .calculator-buttonNumber{
+    height: 250px;
   }
   
   .calculator-Title{
@@ -136,43 +265,78 @@ button:focus-visible {
   }
   
 }
+.calculator-buttonNumber{
+  height: 100%;
+}
 .calculator-Main{
-  height: 100vh;
+  border: solid red;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   
 }
 .calculator-innerMain{
-  margin: auto;
+  border: solid blue !important;
   padding: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.calculator-inputContent{
+  width: 100%;
+  padding-top: 3rem;
+  font-size: 2rem;
+  border-radius: 10px 10px 0px 0px;
+}
+.calculatorContainer{
+  border: solid red !important;
+}
 
 
 .calculator-buttonNumber{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  border-radius: 50% !important;
+  /* justify-content: space-between; */
 }
 
 .calculator-Last{
-  width: calc(23%);
-  margin-bottom: 10px;
+  width: calc(25%);
   padding-block: 0.5rem;
+  border-radius: 1%;
+  border-color: solid black;
 }
 
 .calculator-First{
   width: calc(25%);
-  margin-bottom: 10px;
   padding-block: 0.5rem;
+  border-radius: 1%;
+
+}
+.calculator-Secondary{
+  background-color: #FF9500;
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
+}
+.calculatorGray{
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
+  background-color: #505050;
+}
+.calculatorDark{
+  background-color: gray;
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
 }
 
 .calculator-textRight{
   text-align: right;
+}
+
+.calculatorContainer{
+  border: solid green;
 }
 
 /* **********JSON*************** */
@@ -192,3 +356,186 @@ button:focus-visible {
   width: 10rem;
   margin: 10px; /* Adjust as needed */
 }
+
+.JSON-profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc; /* Add background color or image */
+  margin-right: 10px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* **********HOBBY************** */
+.hobby-Main{
+  border: solid red;
+  height: auto;
+}
+
+.hobby-Innermain{
+  border: solid blue !important;
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.hobby-Nav{
+  padding-top: 6rem;
+  font-family: sans-serif;
+}
+
+.hobby-Calculator, .hobby-JSON{
+  color: black;
+  font-size: 1.5rem;
+  border: transparent;
+  background-color: transparent;
+
+
+}
+.hobby-Calculator:active{
+  text-decoration: line-through;
+}
+
+.hobby-JSON:hover, .hobby-Calculator:hover{
+  cursor: pointer;
+  color: black;
+  text-decoration: line-through;
+  background-color: transparent;
+}
+
+.hobby-JSON:after, .hobby-Calculator:after{
+  background-color: transparent;
+}
+
+
+.hobby-upperDiv{
+  border: solid red;
+}
+.hobby-innerUpperDiv{
+  border: solid green;
+  width: 30%;
+}
+
+.hobby-innerUpperDiv h1{
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.hobby1-imageContainer, .hobby2-imageContainer{
+  border: solid green;
+  width: auto;
+  height: 800px;
+  overflow: hidden;
+  transition: 0.5s ease;
+  transform: scale(1);
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+.hobby1-imageContainer:hover, .hobby2-imageContainer:hover{
+  transform: scale(0.95);
+}
+.hobbyCenter{
+  border: solid black !important;
+}
+.hobbyCenter1, .hobbyCenter2, .hobbyCenter3{
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  border: solid blue;
+}
+.hobbyh1-1, .hobbyh1-2, .hobbyh1-3{
+  font-family: sans-serif;
+  /* font-weight: bold; */
+}
+.hobbyh2-1, .hobbyh2-2, .hobbyh2-3{
+  font-family: sans-serif;
+  color: gray;
+}
+.hobby-Img1, .hobby-Img2{
+    transition: 0.5s ease;
+    transform: scale(1);
+    cursor: pointer;
+    /* object-fit: cover !important; */
+    border: solid orange;
+    
+}
+.hobby-Img1, .hobby-Img2{
+  width: 1300px;
+  height: 750px;
+}
+.hobby-Img3{
+  width: 100%;
+  height: 700px;
+}
+.hobby-Img1:hover, .hobby-Img2:hover{
+  transform: scale(1.3);
+}
+
+.hobby-lowerDiv{
+  display: flex;
+  border-color: orange;
+  gap: 2rem;
+}
+
+.hobbyLower-Innerdiv{
+  border: solid pink;
+  width: 100%;
+}
+
+.hobby-lowerDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.hobby-lowerDiv div{
+  width: 100%;
+  height: 100%;
+}
+.hobby-Img4{
+  height: 420px !important;
+}
+
+.hobby-Footer{
+  display: flex;
+  gap: 4rem;
+  border: solid blue;
+}
+.hobby-Footer h4{
+  border: solid orange;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.hobby-Footer h5{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.hobby-Footer div{
+  border: solid violet;
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.JSON-userProfile {
+  display: flex;
+  align-items: center;
+  /* align-items: center; */
+}
+.hobby-labelName a{
+  color: black;
+}
+.hobby-smallImg1, .hobby-smallImg1{
+  height: 400px !important;
+}
+
+
+
+
