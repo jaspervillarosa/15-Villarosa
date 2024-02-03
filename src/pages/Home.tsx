@@ -15,19 +15,19 @@ export default function home() {
                     <h3>
                     Hey there, <br></br>
                     <br />
-                    I'm Aileen. I'm interested in designing meaningful experiences that shape how we interact with technology. 
+                    I'm Jasper. I'm interested in designing meaningful experiences that shape how we interact with technology. 
                     <br /><br />
                     ‍
-                    I'm currently designing experiences to make Amazon a better place to discover and research products. 
+                    I'm currently a junior research & development engineer for Advance World Solution, a better place to grow. 
                     <br />
                     <br />
 
-                    Previously, I studied Communication Design at BTK Berlin, where I wrote my thesis on the effects of biases in design. Before that, I worked with brands to create digital products at Edenspiekermann. 
-                    I spend my time taking photos, drawing, and exploring places. 
+                    Previously, I studied Computer Science at University of the Philippines, where I wrote my thesis on detecting Pest Diseases using machine learning. Before that, I worked with brands to create digital products like HousifyPH. 
+                    I spend my time taking photos, and exploring places. 
                     <br />
                     <br />
                     
-                    Let's chat — hello@aileen.co
+                    Let's chat — jvillarosa@up.edu.ph
                     <br></br>
                     <br />
                     <a href='./MyHobby'>Learn More</a>

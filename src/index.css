@@ -96,7 +96,7 @@ button:focus-visible {
 
 .home-Main{
 
-  border: solid red;
+  border: solid pink;
   height: auto;
   display: flex;
   justify-content: center;
@@ -112,13 +112,25 @@ button:focus-visible {
     align-items: center;
     width: 100%;
   }
+  .homeTitle{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border: solid green;
+    width: 40% !important;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
   .home-phoneImage{
     border: solid green;
     width: 100%;
   }
   .home-myHobbies{
     width: 100% !important;
-    border: solid red;
+    border: solid green;
   }
   .home-phoneImage{
     border: solid green;
@@ -127,8 +139,9 @@ button:focus-visible {
   .hobby-Footer{
     display: flex;
     flex-direction: column;
-    border: solid blue;
-    width: 100%;
+    border: solid orange;
+    margin: auto;
+    width: 80%;
     align-items: left !important;
     justify-content: left !important;
   }
@@ -144,6 +157,8 @@ button:focus-visible {
   display: flex;
   gap: 0rem !important;
   border: solid blue;
+  margin: auto;
+  width: 80%;
 
 }
 .hobby-Footer div{
@@ -174,37 +189,40 @@ button:focus-visible {
   color: white;
   display: flex;
   flex-direction: column;
-  
-
-
 }
 .homeTitle h5{
   color: #BAB9B9;
 }
 .home-mainContainer{
+  padding-top: 4rem;
+  margin: auto;
+  width: 80%;
   border: solid yellow;
   display: flex;
 }
 .home-phoneImage{
   border: solid green;
-  width: 50%;
+  width: 40%;
 }
 .home-imgPhone{
-  width: 400px;
+  width: 350px;
   height: auto;
 }
 .home-myHobbies{
-  width: 50%;
+  width: 60%;
   border: solid red;
 
 }
 .homeContent{
-  border: solid violet;
+  border: solid pink;
   padding-right: 4rem;
   padding-left: 4rem;
   padding-top: 2rem;
   text-align: left;
   text-justify: inter-word;
+}
+.homeContent h3{
+  font-size: 1.5rem !important;
 }
 
 
@@ -244,37 +262,7 @@ button:focus-visible {
 }
 
 /* *********CALCULATOR************** */
-@media (min-width:  700px){
-  .calculator-inputContent{
-    width: 20% !important;
-    padding-top: 3rem;
-    font-size: 2rem;
-    border-radius: 10px 10px 0px 0px !important;
-    text-align: right !important;
-    background-color: #3C3C3C;
-    margin: auto;
-    color: white !important;
-    border-color: 1px solid black !important;
-  }
-
-  .calculator-Numbers{
-    width: 20%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .calculator-buttonNumber{
-    height: 250px;
-  }
-  
-  .calculator-Title{
-    width: 30%;
-    margin: auto;
-  }
-  
-}
-.calculator-buttonNumber{
-  height: 100%;
-}
+@media (max-width:  1000px){
 .calculator-Main{
   border: solid red;
   height: auto;
@@ -284,15 +272,36 @@ button:focus-visible {
   
 }
 .calculator-innerMain{
+  margin: auto;
   border: transparent !important;
+  border: solid green !important;
   padding: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.calculator-Title{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border: solid orange;
+  width: 100% !important;
+  align-items: center;
+  background-color: #171717;
+  padding-block: 8rem;
+}
+.calculator-Title h1{
+  color: whitesmoke;
+}
+.calculator-Title h3{
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
 .calculator-inputContent{
-  width: 100%;
+  width: 100% !important;
   padding-top: 3rem;
   font-size: 2rem;
   border-radius: 10px 10px 0px 0px !important;
@@ -300,16 +309,136 @@ button:focus-visible {
   background-color: #3C3C3C;
   color: white !important;
 }
+.calculator-Input{
+  border: solid red;
+  width: 100%;
+}
 .calculatorContainer{
+
   border: solid red !important;
+}
+.calculator-UI{
+  border: solid green;
+  width: 40% !important;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
 .calculator-buttonNumber{
   display: flex;
   flex-wrap: wrap;
-  border-radius: 50% !important;
-  /* justify-content: space-between; */
+}
+
+.calculator-Last{
+  width: calc(25%);
+  padding-block: 0.5rem;
+  border-radius: 1%;
+  border-color: solid black;
+}
+
+.calculator-First{
+  width: calc(25%);
+  padding-block: 0.5rem;
+  border-radius: 1%;
+
+}
+.calculator-Secondary{
+  background-color: #FF9500;
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
+}
+.calculatorGray{
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
+  background-color: #505050;
+}
+.calculatorDark{
+  background-color: gray;
+  border-top: 1px solid #1C1C1C;
+  border-right: 1px solid #1C1C1C;
+}
+
+.calculator-textRight{
+  text-align: right;
+}
+
+.calculatorContainer{
+  border: solid green;
+}
+
+  
+}
+
+.calculator-Main{
+  border: solid red;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.calculator-innerMain{
+  margin: auto;
+  border: transparent !important;
+  border: solid green !important;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calculator-Title{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border: solid orange;
+  width: 100% !important;
+  align-items: center;
+  background-color: #171717;
+  padding-block: 8rem;
+}
+.calculator-Title h1{
+  color: whitesmoke;
+}
+.calculator-Title h3{
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
+.calculator-inputContent{
+  width: 100% !important;
+  padding-top: 3rem;
+  font-size: 2rem;
+  border-radius: 10px 10px 0px 0px !important;
+  text-align: right !important;
+  background-color: #3C3C3C;
+  color: white !important;
+}
+.calculator-Input{
+  border: solid red;
+  width: 100%;
+}
+.calculatorContainer{
+
+  border: solid red !important;
+}
+.calculator-UI{
+  border: solid green;
+  width: 20%;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.calculator-buttonNumber{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .calculator-Last{
@@ -352,8 +481,13 @@ button:focus-visible {
 /* **********JSON*************** */
 
 .json-Main{
+  border: solid green;
   margin: auto;
-  border: solid white
+}
+.JSON-innerContainer{
+  border: solid red;
+  margin: auto;
+  width: 80%;
 }
 .json-insideMain{
   width: 100%;
@@ -378,23 +512,172 @@ button:focus-visible {
   justify-content: center;
   overflow: hidden;
 }
+  
+.JSON-userProfile {
+  display: flex;
+  align-items: center;
+  /* align-items: center; */
+}
 
 /* **********HOBBY************** */
+@media only screen and (max-width: 800px){
+  .hobby-Main{
+    background-color: white;
+  }
+  .hobby-upperDiv{
+    border: solid red;
+    background-color: white;
+  }
+  .hobby-innerUpperDiv{
+    border: solid orange;
+    width: 45% !important;
+  }
+  .hobby-innerUpperDiv h1{
+    font-weight: 200;
+    font-family: sans-serif;
+  }
+  .hobby1-imageContainer, .hobby2-imageContainer{
+    border: solid green;
+    height: 400px !important;
+    overflow: hidden;
+    transition: 0.5s ease;
+    transform: scale(1);
+    margin-right: auto;
+    margin-left: auto;
+    width: 80% !important;
+  }
+  .hobby1-imageContainer:hover, .hobby2-imageContainer:hover{
+    transform: scale(0.95);
+  }
+  .hobbyCenter{
+    border: solid black !important;
+  }
+  .hobbyCenter1, .hobbyCenter2, .hobbyCenter3{
+    margin: auto;
+    width: 80% !important;
+    padding-top: 1rem;
+    padding-bottom: 3rem !important; 
+    border: solid blue;
+  }
+  .hobbyh1-1, .hobbyh1-2, .hobbyh1-3{
+    font-family: sans-serif;
+    font-size: 1.5rem !important;
+    /* font-weight: bold; */
+  }
+  .hobbyh2-1, .hobbyh2-2, .hobbyh2-3{
+    font-family: sans-serif;
+    font-size: 1.5rem !important;
+    color: gray;
+  }
+  .hobby-Img1, .hobby-Img2{
+      transition: 0.5s ease;
+      width: 500px !important;
+      height: 400px !important;
+      transform: scale(1);
+      cursor: pointer;
+      /* object-fit: cover !important; */
+      border: solid orange;
+  }
+  .hobby-Img1:hover, .hobby-Img2:hover{
+    transform: scale(1.3);
+  }
+  .hobby-lowerDiv{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column !important;
+    border-color: pink;
+    gap: 2rem;
+  }
+  .hobbyLower-Innerdiv{
+    border: solid violet;
+    width: 100%;
+  }
+  
+  .hobby-lowerDiv img{
+    width: 400px !important;
+    height: 400px !important;
+    object-fit: cover;
+  }
+  
+  .hobby-lowerDiv div{
+    width: 100%;
+    height: 100%;
+  }
+  .hobby-Img4{
+    height: 420px !important;
+  }
+  .hobbyh1-sm{
+    font-size: 1.2rem !important;
+    font-weight: 500;
+  }
+  .hobbyh2-sm{
+    font-size: 1rem !important;
+    font-weight: 500;
+  }
+  
+  .hobby-Footer{
+    display: flex;
+    gap: 4rem;
+    border: solid green;
+    margin: auto;
+    width: 80%;
+  }
+  .hobby-Footer h4{
+    border: solid orange;
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  
+  .hobby-Footer h5{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .hobby-Footer div{
+    border: solid violet;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .hobby-labelName a{
+    color: black;
+  }
+  
+  .hobby-smImg1, .hobby-smImg2{
+    height: 400px !important;
+    width: 400px !important;
+    border: solid red;
+  }
+  .hobby-Img3{
+    border: solid orange;
+    width: 100% !important;
+    height: 350px !important;
+    margin-bottom: 6rem;
+  }
+  
+  
+}
+
 .hobby-Main{
   border: solid red;
   height: auto;
 }
 
 .hobby-Innermain{
+  width: 80%;
+  margin: auto;
   border: solid blue !important;
   margin: auto;
   padding: auto;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: flex-end;
 
 }
 .hobby-Nav{
+  border: solid pink;
   padding-top: 6rem;
   font-family: sans-serif;
 }
@@ -427,7 +710,7 @@ button:focus-visible {
   border: solid red;
 }
 .hobby-innerUpperDiv{
-  border: solid green;
+  border: solid orange;
   width: 30%;
 }
 
@@ -453,6 +736,8 @@ button:focus-visible {
   border: solid black !important;
 }
 .hobbyCenter1, .hobbyCenter2, .hobbyCenter3{
+  margin: auto;
+  width: 90%;
   padding-top: 1rem;
   padding-bottom: 5rem;
   border: solid blue;
@@ -478,21 +763,25 @@ button:focus-visible {
   height: 750px;
 }
 .hobby-Img3{
+  border: solid orange;
   width: 100%;
   height: 700px;
+  margin-bottom: 6rem;
 }
 .hobby-Img1:hover, .hobby-Img2:hover{
   transform: scale(1.3);
 }
 
 .hobby-lowerDiv{
+  margin: auto;
+  width: 80%;
   display: flex;
-  border-color: orange;
+  border-color: pink;
   gap: 2rem;
 }
 
 .hobbyLower-Innerdiv{
-  border: solid pink;
+  border: solid violet;
   width: 100%;
 }
 
@@ -509,11 +798,21 @@ button:focus-visible {
 .hobby-Img4{
   height: 420px !important;
 }
+.hobbyh1-sm{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.hobbyh2-sm{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 .hobby-Footer{
   display: flex;
   gap: 4rem;
-  border: solid blue;
+  border: solid green;
+  margin: auto;
+  width: 80%;
 }
 .hobby-Footer h4{
   border: solid orange;
@@ -542,9 +841,13 @@ button:focus-visible {
 .hobby-labelName a{
   color: black;
 }
-.hobby-smallImg1, .hobby-smallImg1{
-  height: 400px !important;
+
+.hobby-smImg1, .hobby-smImg2{
+  height: 550px !important;
+  width: 550px !important;
+  border: solid red;
 }
+
 
 
 

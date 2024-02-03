@@ -47,7 +47,8 @@ export default function JSON() {
             </Nav.Item>
         </Nav>
       </div>
-         <div className='title'>
+      <div className="JSON-innerContainer">
+      <div className='title'>
             <h1>
                 USER INFORMATION
             </h1>
@@ -79,7 +80,8 @@ export default function JSON() {
         </Card>
         </>
         ))}
-    </div>
+    </div>   
+      </div>
     <Footer></Footer>
     </div>
    

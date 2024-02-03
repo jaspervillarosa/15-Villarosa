@@ -40,14 +40,11 @@ export default function Calculator() {
             </Nav.Item>
         </Nav>
       </div>
-    <div className='calcualtor-innerMain'>
-    <div className='calculator-Title'>
-            <h1>
-             CALCULATOR
-            </h1>
-        </div>
-      <div className='calculator-Input'>
-        <div className='calculator-Input'>
+    <div className='calculator-innerMain'>
+
+    <div className="calculator-UI">
+
+    <div className='calculator-Input'>
           <Form.Control
             type='text'
             value={result !== null ? result : 0 || input}
@@ -55,17 +52,16 @@ export default function Calculator() {
             aria-label='Result'
             className='calculator-inputContent' // Align input text to the right
           />
-        </div>
       </div>
 
       <div className='calculator-Numbers'>
         <div className='calculator-buttonNumber'>
-          {[ 'AC', '+/-','%','÷', 7, 8, 9, '*',4, 5, 6,'-', 1, 2, 3, '+','', 0, '.', '='].map(
+          {[ 'AC', '+/-','%','/', 7, 8, 9, '*',4, 5, 6,'-', 1, 2, 3, '+','', 0, '.', '='].map(
             (item, index) => (
               <button
                 key={item}
                 className={
-                item === '÷' || item === '*' || item === '-' || item === '+' || item === '=' && index % 4 === 3 ? 'calculator-Secondary calculator-Last': 
+                item === '/' || item === '*' || item === '-' || item === '+' || item === '=' && index % 4 === 3 ? 'calculator-Secondary calculator-Last': 
                 item === 'AC' || item === '+/-' || item === '%' ? 'calculatorGray calculator-Last' : 'calculatorDark calculator-First' 
                 } 
                 onClick={() => {
@@ -88,6 +84,18 @@ export default function Calculator() {
           )}
         </div>
       </div>
+      
+    </div>
+      
+
+      <div className='calculator-Title'>
+        <div className="calculator-innerDivTitle">
+        <h1>
+             CALCULATOR
+            </h1>
+            <h3> See more </h3>
+        </div>
+        </div>
     </div>
         
       <Footer/>
