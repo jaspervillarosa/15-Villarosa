@@ -9,6 +9,7 @@ export default function home() {
       <Header />
       <Row className="d-flex justify-content-center">
         <Col className="text-center justify-content-center home-innerMain">
+          {/* Sa taas ni Digitak tRansformation */}
           <div className="home-mainContainer">
             <div className="home-myHobbies myHobbies">
               <div className="homeContent">
@@ -24,8 +25,7 @@ export default function home() {
                   <br />
                   <br />
                   Previously, I studied Computer Science at University of the
-                  Philippines, where I wrote my thesis on detecting Pest
-                  Diseases using machine learning. Before that, I worked with
+                  Philippines, where I wrote my thesis on prediciting pest damages and provide solutions using machine learning. While at school, I worked with
                   brands to create digital products like HousifyPH. I spend my
                   time taking photos, and exploring places.
                   <br />
@@ -38,13 +38,23 @@ export default function home() {
               </div>
             </div>
             <div className="home-phoneImage">
-              <img
-                className="home-imgPhone"
-                src="src/image/phoneGraphics.png"
-                alt=""
-              />
+            <div className="flip-box">
+            <div className="flip-box-inner">
+                <div className="flip-box-front">
+                    <img
+                    className="home-imgPhone"
+                    src="src/image/phoneGraphics.png"
+                    alt=""
+                />
+                </div>
+                <div className="flip-box-back">
+                <img className="home-imgPhone2" src="src/image/iphone.webp" alt="" />
+                </div>
+            </div>
+            </div>
             </div>
           </div>
+          {/* Digital Transformation */}
           <div className="home-Headline">
             <div className="homeTitle">
               <h1>Digital Transformation</h1>

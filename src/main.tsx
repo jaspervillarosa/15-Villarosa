@@ -7,6 +7,7 @@ import './index.css'
 import Calculator from './pages/Calculator'
 import JSON from './pages/JSON'
 import MyHobby from './pages/MyHobby'
+import Calculator2 from './pages/Calculator2'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
          <Route path='/' element={<Home/>}></Route>
+         <Route path='/calculator2' element={<Calculator2/>}></Route>
          <Route path='/calculator' element={<Calculator/>}></Route>
          <Route path='/JSON' element={<JSON/>}></Route>
          <Route path='/myHobby' element={<MyHobby/>}></Route>

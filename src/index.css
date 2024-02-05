@@ -19,17 +19,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 a {
@@ -41,23 +41,13 @@ a:hover {
   color: #535bf2;
 }
 
-/* body,html {
-  border: solid blue;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
-
-body{
+body {
   min-height: 100vh;
 }
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  /* background-image: url("/calculatorbg.png") !important; */
 }
 
 button {
@@ -94,25 +84,16 @@ button:focus-visible {
 
 /* ******************* HOME **************  */
 
-.home-Main{
-
-  border: solid pink;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-
-}
-@media (max-width:  768px){
-  .home-mainContainer{
+@media (max-width: 768px) {
+  .home-mainContainer {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .homeTitle{
+
+  .homeTitle {
     padding-top: 2rem;
     padding-bottom: 3rem;
     border: solid green;
@@ -124,19 +105,62 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
   }
-  .home-phoneImage{
-    border: solid green;
+
+  .home-phoneImage {
+    margin: auto !important;
+    width: 50% !important;
+  }
+  .home-imgPhone {
+    border: solid red;
+    margin: auto !important ;
+    width: 350px !important;
+    height: auto;
+  }
+  .home-imgPhone2 {
+    border: solid blue;
+    width: 660px;
+    height: auto;
+    margin: 0;
+    display: none;
+  }
+
+  .flip-box {
+    background-color: transparent;
+    perspective: 1000px;
+    height: auto;
+  }
+  .flip-box-inner {
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
   }
-  .home-myHobbies{
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(0deg) rotateX(0deg) !important;
+  }
+  .flip-box-front,
+  .flip-box-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-box-front {
+    position: static !important;
+  }
+  .flip-box-back {
+    position: static !important;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .home-myHobbies {
     width: 100% !important;
     border: solid green;
   }
-  .home-phoneImage{
-    border: solid green;
-    width: 100% !important;
-  }
-  .hobby-Footer{
+  .hobby-Footer {
     display: flex;
     flex-direction: column;
     border: solid orange;
@@ -145,31 +169,38 @@ button:focus-visible {
     align-items: left !important;
     justify-content: left !important;
   }
-  .hobby-Footer{
+  .hobby-Footer {
     display: flex;
     gap: 4rem;
     border: solid blue;
     padding-top: 6rem;
     padding-bottom: 2rem;
-
+  }
+  .hobby-Footer {
+    display: flex;
+    gap: 0rem !important;
+    border: solid blue;
+    margin: auto;
+    width: 80%;
+  }
+  .hobby-Footer div {
+    border: solid violet;
+    width: 100%;
+    height: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 3rem !important;
+  }
 }
-.hobby-Footer{
+
+.home-Main {
+  border: solid pink;
+  height: auto;
   display: flex;
-  gap: 0rem !important;
-  border: solid blue;
-  margin: auto;
-  width: 80%;
-
-}
-.hobby-Footer div{
-  border: solid violet;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 0rem !important;
-  padding-top: 0rem !important;
-  padding-bottom: 3rem !important;
 }
-}
-.home-Headline{
+.home-Headline {
   border: solid orange;
   width: 100% !important;
   display: flex;
@@ -178,7 +209,7 @@ button:focus-visible {
   background-color: #171717;
   padding-block: 8rem;
 }
-.homeTitle{
+.homeTitle {
   padding-top: 2rem;
   padding-bottom: 3rem;
   border: solid green;
@@ -190,43 +221,34 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
 }
-.homeTitle h5{
-  color: #BAB9B9;
+.homeTitle h5 {
+  color: #bab9b9;
 }
-.home-mainContainer{
+.home-mainContainer {
   padding-top: 4rem;
   margin: auto;
   width: 80%;
   border: solid yellow;
   display: flex;
+  margin-bottom: 6rem;
 }
-.home-phoneImage{
-  border: solid green;
-  width: 40%;
-}
-.home-imgPhone{
-  width: 350px;
-  height: auto;
-}
-.home-myHobbies{
+.home-myHobbies {
   width: 60%;
   border: solid red;
-
 }
-.homeContent{
+.homeContent {
   border: solid pink;
-  padding-right: 4rem;
+  padding-right: 0rem !important;
   padding-left: 4rem;
   padding-top: 2rem;
   text-align: left;
   text-justify: inter-word;
 }
-.homeContent h3{
+.homeContent h3 {
   font-size: 1.5rem !important;
 }
 
-
-.home-innerMain{
+.home-innerMain {
   border: solid blue;
   margin: auto;
   padding: auto;
@@ -236,52 +258,259 @@ button:focus-visible {
   align-items: center;
 }
 
-.home-Card{
+.home-Card {
   margin-block: 2rem;
   margin-inline: auto;
   width: 50% !important;
   text-align: left;
-
 }
 
-.home-Headline{
+.home-Headline {
   width: 50%;
   margin: auto;
   text-align: left;
 }
 
-.home-Buttons{
+.home-Buttons {
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
 }
 
-.home-insideButton{
+.home-insideButton {
   width: 100%;
+}
+
+.home-phoneImage {
+  margin-right: 10rem !important;
+  width: 50%;
+}
+.home-imgPhone {
+  border: solid red;
+  margin-left: 9.5rem;
+  width: 350px;
+  height: auto;
+}
+.home-imgPhone2 {
+  border: solid blue;
+  width: 655px;
+  height: auto;
+  margin: 0;
+}
+
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px;
+  height: auto;
+}
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(360deg);
+}
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  color: black;
+}
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
 }
 
 /* *********CALCULATOR************** */
-@media (max-width:  1000px){
-.calculator-Main{
+@media (max-width: 1000px) {
+  .calculator-Main {
+    border: solid red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .calculator-innerMain {
+    margin: auto;
+    border: transparent !important;
+    padding: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calculator-Title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border: solid orange;
+    width: 100% !important;
+    align-items: center;
+    background-color: #171717;
+    padding-block: 8rem;
+  }
+  .calculator-Title h1 {
+    color: whitesmoke;
+  }
+  .calculator-Title h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+  }
+  .calculator-inputContent {
+    width: 100% !important;
+    padding-top: 2rem !important;
+    font-size: 2rem;
+    border-radius: 10px 10px 0px 0px !important;
+    text-align: right !important;
+    background-color: #3c3c3c;
+    color: white !important;
+  }
+  .calculator-Input {
+    border: solid red;
+    width: 100%;
+  }
+  .calculatorContainer {
+    border: solid red !important;
+  }
+  .calculator-UI {
+    display: none;
+  }
+  .calculator-UI2 {
+    display: block !important;
+    width: 40% !important;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .calculator-buttonNumber {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calculator-Last {
+    width: calc(25%) !important;
+    padding-block: 0.5rem;
+    border-radius: 1%;
+    border-color: solid black;
+  }
+
+  .calculator-First {
+    width: calc(25%) !important;
+    padding-block: 0.5rem;
+    border-radius: 1%;
+  }
+  .calculator-Secondary {
+    background-color: #ff9500;
+    border-top: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+  }
+  .calculatorGray {
+    border-top: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+    background-color: #505050;
+  }
+  .calculatorDark {
+    background-color: gray;
+    border-top: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+  }
+
+  .calculator-textRight {
+    text-align: right;
+  }
+
+  .calculatorIcon{
+    padding-top: 4rem !important;
+  }
+  .calculator-imgDiv{
+    transform: translateY(-105%) !important;
+    position: relative;
+    padding-block: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toolTip {
+    cursor: pointer;
+    z-index: 20;
+    padding: 0;
+  }
+  .toolTip img{
+    transform: translateX(1000%);
+    transform: translateY(-100%);
+    position: absolute;
+  }
+  .tooltipText {
+    position: absolute;
+    left:100% !important;
+    top: 60% !important;
+    transform: translateX(-600%) !important;
+    transform: translateY(-100%) !important;
+    border: 1px solid #353839;
+    background-color: #353839;
+    white-space: nowrap;
+    border-radius: 7px;
+    color: white;
+    padding-block: 0.25rem;
+    padding-inline: 0.75rem;
+    font-size: 0.75rem;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  .tooltipText::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-100%);
+    border: 15px solid;
+    border-color: #353839 #3530 #3530;
+  }
+  .toolTip:hover .tooltipText{
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+  }
+  .calculatorLaptop{
+    height: 500px !important;
+    width: 650px !important;
+    z-index: 1;
+  }
+}
+
+.calculator-Main {
   border: solid red;
   height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
-.calculator-innerMain{
+.calculator-innerMain {
+  border: solid green !important;
   margin: auto;
   border: transparent !important;
-  border: solid green !important;
   padding: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.calculator-Title{
+.calculator-Title {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -292,219 +521,316 @@ button:focus-visible {
   background-color: #171717;
   padding-block: 8rem;
 }
-.calculator-Title h1{
+.calculator-Title h1 {
   color: whitesmoke;
 }
-.calculator-Title h3{
+.calculator-Title h3 {
   font-size: 1rem;
   font-weight: bold;
   color: gray;
 }
-.calculator-inputContent{
+.calculator-inputContent {
+  opacity: 0.65;
   width: 100% !important;
-  padding-top: 3rem;
-  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem !important;
+  font-size: 3rem;
   border-radius: 10px 10px 0px 0px !important;
   text-align: right !important;
-  background-color: #3C3C3C;
+  background-color: black;
   color: white !important;
+  font-weight: 200;
 }
-.calculator-Input{
+.calculator-Input {
   border: solid red;
   width: 100%;
 }
-.calculatorContainer{
-
+.calculatorContainer {
   border: solid red !important;
 }
-.calculator-UI{
-  border: solid green;
-  width: 40% !important;
+.calculator-UI2 {
+  display: none;
+}
+.calculator-UI {
+  width: 45%;
   margin-top: 6rem;
   margin-bottom: 4rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-
-.calculator-buttonNumber{
+.calculator-buttonNumber {
   display: flex;
   flex-wrap: wrap;
+  height: 15rem;
 }
-
-.calculator-Last{
-  width: calc(25%);
+.calculator-Last {
+  width: calc(10%);
   padding-block: 0.5rem;
   border-radius: 1%;
   border-color: solid black;
 }
 
-.calculator-First{
-  width: calc(25%);
+.calculator-First {
+  width: calc(10%);
   padding-block: 0.5rem;
   border-radius: 1%;
-
 }
-.calculator-Secondary{
-  background-color: #FF9500;
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
+.calculator-Secondary {
+  background-color: #ff9500;
+  border-top: 1px solid #1c1c1c;
+  border-right: 1px solid #1c1c1c;
 }
-.calculatorGray{
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
+.calculatorGray {
+  border-top: 1px solid #1c1c1c;
+  border-right: 1px solid #1c1c1c;
   background-color: #505050;
 }
-.calculatorDark{
+.calculatorDark {
   background-color: gray;
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
+  border-top: 1px solid #1c1c1c;
+  border-right: 1px solid #1c1c1c;
 }
 
-.calculator-textRight{
+.calculator-textRight {
   text-align: right;
 }
-
-.calculatorContainer{
-  border: solid green;
+/* start here  */
+.calculatorIcon{
+  padding-top: 4rem !important;
 }
-
-  
-}
-
-.calculator-Main{
-  border: solid red;
-  height: auto;
+.calculator-imgDiv{
+  transform: translateY(-140%);
+  position: relative;
+  padding-block: 10rem;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  
-}
-.calculator-innerMain{
-  margin: auto;
-  border: transparent !important;
-  border: solid green !important;
-  padding: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
-.calculator-Title{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  border: solid orange;
-  width: 100% !important;
-  align-items: center;
-  background-color: #171717;
-  padding-block: 8rem;
+.toolTip {
+  cursor: pointer;
+  z-index: 20;
+  padding: 0;
 }
-.calculator-Title h1{
-  color: whitesmoke;
+.toolTip img{
+  transform: translateX(1000%);
+  transform: translateY(-100%);
+  position: absolute;
 }
-.calculator-Title h3{
-  font-size: 1rem;
-  font-weight: bold;
-  color: gray;
+.tooltipText {
+  position: absolute;
+  left: 47% !important;
+  top: 62%;
+  transform: translateX(800%);
+  transform: translateY(-100%);
+  border: 1px solid #353839;
+  background-color: #353839;
+  white-space: nowrap;
+  border-radius: 7px;
+  color: white;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  font-size: 0.75rem;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
-.calculator-inputContent{
-  width: 100% !important;
-  padding-top: 3rem;
-  font-size: 2rem;
-  border-radius: 10px 10px 0px 0px !important;
-  text-align: right !important;
-  background-color: #3C3C3C;
-  color: white !important;
+.tooltipText::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #353839 #3530 #3530;
 }
-.calculator-Input{
-  border: solid red;
-  width: 100%;
+.toolTip:hover .tooltipText{
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
 }
-.calculatorContainer{
-
-  border: solid red !important;
-}
-.calculator-UI{
-  border: solid green;
-  width: 20%;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-
-.calculator-buttonNumber{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.calculator-Last{
-  width: calc(25%);
-  padding-block: 0.5rem;
-  border-radius: 1%;
-  border-color: solid black;
-}
-
-.calculator-First{
-  width: calc(25%);
-  padding-block: 0.5rem;
-  border-radius: 1%;
-
-}
-.calculator-Secondary{
-  background-color: #FF9500;
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
-}
-.calculatorGray{
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
-  background-color: #505050;
-}
-.calculatorDark{
-  background-color: gray;
-  border-top: 1px solid #1C1C1C;
-  border-right: 1px solid #1C1C1C;
-}
-
-.calculator-textRight{
-  text-align: right;
-}
-
-.calculatorContainer{
-  border: solid green;
+.calculatorLaptop{
+  height: 700px;
+  width: 900px;
+  z-index: 1;
 }
 
 /* **********JSON*************** */
-
-.json-Main{
+@media only screen and (max-width: 800px) {
+  .userUpperDesign{
+    margin-top: 4rem !important;
+    border: solid violet;
+    object-fit: cover;
+  }
+  .json-userInformationContent{
+    margin-top: 2rem;
+    border: solid red !important;
+    margin-inline: auto;
+    width: 80% !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .json-userInformationContent h1{
+    padding-inline: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .json-userInformationContent p{
+    padding-inline: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2;
+    border: solid green !important;
+    color: #5B5E6E;
+  }
+  .userUpperDesign img{
+    width: 700px !important;
+    height: 450px !important;
+  }
+  .jsonUpperh1{
+    padding-left: 0rem !important;
+    text-align: left !important;
+    width: 100% !important;
+    border: solid blue;
+    margin-bottom: 3rem;
+  }
+  .jsonUpperP{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    justify-content: center !important;
+    padding-right: 0rem !important;
+    padding-left: 1rem !important;
+  }
+}
+.json-Main {
   border: solid green;
   margin: auto;
 }
-.JSON-innerContainer{
+/* start here  */
+.userUpperDesign{
+  border: solid violet;
+  object-fit: cover;
+  margin-top: 4rem !important;
+}
+.json-userInformationContent{
+  border: solid red !important;
+  margin-inline: auto;
+  width: 80% !important;
+  display: flex;
+  margin-top: 4rem;
+}
+.json-userInformationContent h1{
+  font-weight: 500;
+  font-size: 2rem;
+  color: #323648;
+  font-weight: 600;
+
+}
+.json-userInformationContent p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2;
+  border: solid green !important;
+  color: #5B5E6E;
+}
+.userUpperDesign img{
+  width: 1425px;
+  height: 800px;
+}
+.jsonUpperh1{
+  padding-left: 2rem;
+  text-align: center !important;
+  width: 40%;
+  border: solid blue;
+}
+.jsonUpperP{
+  width: 60%;
+  padding-right: 10rem;
+}
+.JSON-innerContainer {
   border: solid red;
   margin: auto;
   width: 80%;
 }
-.json-insideMain{
+.json-insideMain {
+  background-color: solid green !important;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.json-Card{
+.json-Card {
   width: 10rem;
   margin: 10px; /* Adjust as needed */
+  background: white !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0.6;
+  transition: opacity .2s ease-out;
+}
+.cardInnerContainer{
+  margin-top: 1.5rem;
+  line-height: 0.75;
+  visibility: hidden !important;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease; /* Add a transition for a smoother effect */
+}
+/* .cardInnerContainer::before{
+  border: solid red !important;
+} */
+.json-Card:hover .cardInnerContainer{
+  visibility: visible !important;
+  opacity: 1;
+  cursor: pointer;
+}
+.json-Card:hover{
+  opacity: 1;
+  color: black;
+}
+.hello{
+  position: absolute;
+  visibility: visible;
+  line-height: 0.1;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
+}
+.hello h1{
+  line-height: 1.25;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.hello h5{
+  font-size: 0.85rem;
+}
+.json-Card:hover .hello{
+  visibility: hidden;
+  transition: opacity 2s ease;
+  opacity: 0;
 }
 
+/* .tooltipText::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #353839 #3530 #3530;
+}
+.toolTip:hover .tooltipText{
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+} */
 .JSON-profileImage {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background-color: #ccc; /* Add background color or image */
   margin-right: 10px; /* Adjust as needed */
   display: flex;
@@ -512,7 +838,12 @@ button:focus-visible {
   justify-content: center;
   overflow: hidden;
 }
-  
+.JSON-profileImage img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
 .JSON-userProfile {
   display: flex;
   align-items: center;
@@ -520,23 +851,24 @@ button:focus-visible {
 }
 
 /* **********HOBBY************** */
-@media only screen and (max-width: 800px){
-  .hobby-Main{
+@media only screen and (max-width: 800px) {
+  .hobby-Main {
     background-color: white;
   }
-  .hobby-upperDiv{
+  .hobby-upperDiv {
     border: solid red;
     background-color: white;
   }
-  .hobby-innerUpperDiv{
+  .hobby-innerUpperDiv {
     border: solid orange;
     width: 45% !important;
   }
-  .hobby-innerUpperDiv h1{
+  .hobby-innerUpperDiv h1 {
     font-weight: 200;
     font-family: sans-serif;
   }
-  .hobby1-imageContainer, .hobby2-imageContainer{
+  .hobby1-imageContainer,
+  .hobby2-imageContainer {
     border: solid green;
     height: 400px !important;
     overflow: hidden;
@@ -546,42 +878,51 @@ button:focus-visible {
     margin-left: auto;
     width: 80% !important;
   }
-  .hobby1-imageContainer:hover, .hobby2-imageContainer:hover{
+  .hobby1-imageContainer:hover,
+  .hobby2-imageContainer:hover {
     transform: scale(0.95);
   }
-  .hobbyCenter{
+  .hobbyCenter {
     border: solid black !important;
   }
-  .hobbyCenter1, .hobbyCenter2, .hobbyCenter3{
+  .hobbyCenter1,
+  .hobbyCenter2,
+  .hobbyCenter3 {
     margin: auto;
     width: 80% !important;
     padding-top: 1rem;
-    padding-bottom: 3rem !important; 
+    padding-bottom: 3rem !important;
     border: solid blue;
   }
-  .hobbyh1-1, .hobbyh1-2, .hobbyh1-3{
+  .hobbyh1-1,
+  .hobbyh1-2,
+  .hobbyh1-3 {
     font-family: sans-serif;
     font-size: 1.5rem !important;
     /* font-weight: bold; */
   }
-  .hobbyh2-1, .hobbyh2-2, .hobbyh2-3{
+  .hobbyh2-1,
+  .hobbyh2-2,
+  .hobbyh2-3 {
     font-family: sans-serif;
     font-size: 1.5rem !important;
     color: gray;
   }
-  .hobby-Img1, .hobby-Img2{
-      transition: 0.5s ease;
-      width: 500px !important;
-      height: 400px !important;
-      transform: scale(1);
-      cursor: pointer;
-      /* object-fit: cover !important; */
-      border: solid orange;
+  .hobby-Img1,
+  .hobby-Img2 {
+    transition: 0.5s ease;
+    width: 500px !important;
+    height: 400px !important;
+    transform: scale(1);
+    cursor: pointer;
+    /* object-fit: cover !important; */
+    border: solid orange;
   }
-  .hobby-Img1:hover, .hobby-Img2:hover{
+  .hobby-Img1:hover,
+  .hobby-Img2:hover {
     transform: scale(1.3);
   }
-  .hobby-lowerDiv{
+  .hobby-lowerDiv {
     margin: auto;
     width: 80%;
     display: flex;
@@ -589,83 +930,82 @@ button:focus-visible {
     border-color: pink;
     gap: 2rem;
   }
-  .hobbyLower-Innerdiv{
+  .hobbyLower-Innerdiv {
     border: solid violet;
     width: 100%;
   }
-  
-  .hobby-lowerDiv img{
+
+  .hobby-lowerDiv img {
     width: 400px !important;
     height: 400px !important;
     object-fit: cover;
   }
-  
-  .hobby-lowerDiv div{
+
+  .hobby-lowerDiv div {
     width: 100%;
     height: 100%;
   }
-  .hobby-Img4{
+  .hobby-Img4 {
     height: 420px !important;
   }
-  .hobbyh1-sm{
+  .hobbyh1-sm {
     font-size: 1.2rem !important;
     font-weight: 500;
   }
-  .hobbyh2-sm{
+  .hobbyh2-sm {
     font-size: 1rem !important;
     font-weight: 500;
   }
-  
-  .hobby-Footer{
+
+  .hobby-Footer {
     display: flex;
     gap: 4rem;
     border: solid green;
     margin: auto;
     width: 80%;
   }
-  .hobby-Footer h4{
+  .hobby-Footer h4 {
     border: solid orange;
     font-size: 1rem;
     font-family: sans-serif;
   }
-  
-  .hobby-Footer h5{
+
+  .hobby-Footer h5 {
     font-size: 0.8rem;
     font-weight: bold;
     color: gray;
   }
-  
-  .hobby-Footer div{
+
+  .hobby-Footer div {
     border: solid violet;
     width: 100%;
     padding-top: 10rem;
     padding-bottom: 5rem;
   }
-  .hobby-labelName a{
+  .hobby-labelName a {
     color: black;
   }
-  
-  .hobby-smImg1, .hobby-smImg2{
+
+  .hobby-smImg1,
+  .hobby-smImg2 {
     height: 400px !important;
     width: 400px !important;
     border: solid red;
   }
-  .hobby-Img3{
+  .hobby-Img3 {
     border: solid orange;
     width: 100% !important;
     height: 350px !important;
     margin-bottom: 6rem;
   }
-  
-  
 }
 
-.hobby-Main{
+.hobby-Main {
   border: solid red;
   height: auto;
 }
 
-.hobby-Innermain{
+.hobby-Innermain {
   width: 80%;
   margin: auto;
   border: solid blue !important;
@@ -674,51 +1014,51 @@ button:focus-visible {
   /* width: 100%; */
   display: flex;
   justify-content: flex-end;
-
 }
-.hobby-Nav{
+.hobby-Nav {
   border: solid pink;
   padding-top: 6rem;
   font-family: sans-serif;
 }
 
-.hobby-Calculator, .hobby-JSON{
+.hobby-Calculator,
+.hobby-JSON {
   color: black;
   font-size: 1.5rem;
   border: transparent;
   background-color: transparent;
-
-
 }
-.hobby-Calculator:active{
+.hobby-Calculator:active {
   text-decoration: line-through;
 }
 
-.hobby-JSON:hover, .hobby-Calculator:hover{
+.hobby-JSON:hover,
+.hobby-Calculator:hover {
   cursor: pointer;
   color: black;
   text-decoration: line-through;
   background-color: transparent;
 }
 
-.hobby-JSON:after, .hobby-Calculator:after{
+.hobby-JSON:after,
+.hobby-Calculator:after {
   background-color: transparent;
 }
 
-
-.hobby-upperDiv{
+.hobby-upperDiv {
   border: solid red;
 }
-.hobby-innerUpperDiv{
+.hobby-innerUpperDiv {
   border: solid orange;
   width: 30%;
 }
 
-.hobby-innerUpperDiv h1{
+.hobby-innerUpperDiv h1 {
   font-weight: 400;
   font-family: sans-serif;
 }
-.hobby1-imageContainer, .hobby2-imageContainer{
+.hobby1-imageContainer,
+.hobby2-imageContainer {
   border: solid green;
   width: auto;
   height: 800px;
@@ -729,50 +1069,59 @@ button:focus-visible {
   margin-left: auto;
   width: 90%;
 }
-.hobby1-imageContainer:hover, .hobby2-imageContainer:hover{
+.hobby1-imageContainer:hover,
+.hobby2-imageContainer:hover {
   transform: scale(0.95);
 }
-.hobbyCenter{
+.hobbyCenter {
   border: solid black !important;
 }
-.hobbyCenter1, .hobbyCenter2, .hobbyCenter3{
+.hobbyCenter1,
+.hobbyCenter2,
+.hobbyCenter3 {
   margin: auto;
   width: 90%;
   padding-top: 1rem;
   padding-bottom: 5rem;
   border: solid blue;
 }
-.hobbyh1-1, .hobbyh1-2, .hobbyh1-3{
+.hobbyh1-1,
+.hobbyh1-2,
+.hobbyh1-3 {
   font-family: sans-serif;
   /* font-weight: bold; */
 }
-.hobbyh2-1, .hobbyh2-2, .hobbyh2-3{
+.hobbyh2-1,
+.hobbyh2-2,
+.hobbyh2-3 {
   font-family: sans-serif;
   color: gray;
 }
-.hobby-Img1, .hobby-Img2{
-    transition: 0.5s ease;
-    transform: scale(1);
-    cursor: pointer;
-    /* object-fit: cover !important; */
-    border: solid orange;
-    
+.hobby-Img1,
+.hobby-Img2 {
+  transition: 0.5s ease;
+  transform: scale(1);
+  cursor: pointer;
+  /* object-fit: cover !important; */
+  border: solid orange;
 }
-.hobby-Img1, .hobby-Img2{
+.hobby-Img1,
+.hobby-Img2 {
   width: 1300px;
   height: 750px;
 }
-.hobby-Img3{
+.hobby-Img3 {
   border: solid orange;
   width: 100%;
   height: 700px;
   margin-bottom: 6rem;
 }
-.hobby-Img1:hover, .hobby-Img2:hover{
+.hobby-Img1:hover,
+.hobby-Img2:hover {
   transform: scale(1.3);
 }
 
-.hobby-lowerDiv{
+.hobby-lowerDiv {
   margin: auto;
   width: 80%;
   display: flex;
@@ -780,53 +1129,53 @@ button:focus-visible {
   gap: 2rem;
 }
 
-.hobbyLower-Innerdiv{
+.hobbyLower-Innerdiv {
   border: solid violet;
   width: 100%;
 }
 
-.hobby-lowerDiv img{
+.hobby-lowerDiv img {
   width: 100%;
   height: 100%;
   object-fit: cover !important;
 }
 
-.hobby-lowerDiv div{
+.hobby-lowerDiv div {
   width: 100%;
   height: 100%;
 }
-.hobby-Img4{
+.hobby-Img4 {
   height: 420px !important;
 }
-.hobbyh1-sm{
+.hobbyh1-sm {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.hobbyh2-sm{
+.hobbyh2-sm {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.hobby-Footer{
+.hobby-Footer {
   display: flex;
   gap: 4rem;
   border: solid green;
   margin: auto;
   width: 80%;
 }
-.hobby-Footer h4{
+.hobby-Footer h4 {
   border: solid orange;
   font-size: 1rem;
   font-family: sans-serif;
 }
 
-.hobby-Footer h5{
+.hobby-Footer h5 {
   font-size: 0.8rem;
   font-weight: bold;
   color: gray;
 }
 
-.hobby-Footer div{
+.hobby-Footer div {
   border: solid violet;
   width: 100%;
   padding-top: 10rem;
@@ -838,17 +1187,13 @@ button:focus-visible {
   align-items: center;
   /* align-items: center; */
 }
-.hobby-labelName a{
+.hobby-labelName a {
   color: black;
 }
 
-.hobby-smImg1, .hobby-smImg2{
+.hobby-smImg1,
+.hobby-smImg2 {
   height: 550px !important;
   width: 550px !important;
   border: solid red;
 }
-
-
-
-
-
