@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, Nav } from "react-bootstrap";
 import Footer from "../components/Footer";
+import HomeNav from "../components/HomeNav";
 
 interface User {
   id: number;
@@ -150,6 +151,7 @@ export default function JSON() {
         <img src="src/image/calculatorbg.png" alt="" />
       </div>
       <Footer></Footer>
+      <HomeNav></HomeNav>
     </div>
   );
 }

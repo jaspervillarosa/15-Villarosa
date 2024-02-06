@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import HomeNav from "../components/HomeNav";
 
 export default function MyHobby() {
   return (
@@ -9,7 +10,7 @@ export default function MyHobby() {
       <div className="hobby-upperDiv">
         <div className="hobby-innerUpperDiv">
           <h1>
-            Jasper is a digital product designer living in <del>Las Piñas</del>{" "}
+            Jasper is interested in digital product designing living in <del>Las Piñas</del>{" "}
             city
           </h1>
         </div>
@@ -80,6 +81,7 @@ export default function MyHobby() {
       </div>
 
       <Footer />
+      <HomeNav></HomeNav>
     </div>
   );
 }
