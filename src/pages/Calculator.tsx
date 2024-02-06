@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Button, Form, Nav } from "react-bootstrap";
 import Footer from "../components/Footer";
 import HomeNav from "../components/HomeNav";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 export default function Calculator() {
   const [formVisible, setFormVisible] = useState(false);
@@ -23,9 +21,13 @@ export default function Calculator() {
     setInput((prevInput) => prevInput + value);
   };
 
-  const handleCalculate = () => {
+  const handleCalculate = (value: any) => {
     try {
-      setResult(eval(input));
+        if (/[+\-*/]$/.test(input)) {
+            setInput((prevInput) => prevInput.slice(0, -1)) + value;
+        } else {
+            setResult(eval(input)); // Evaluate the input expression
+        }
     } catch (error) {
       setResult(null);
     }
@@ -223,7 +225,7 @@ export default function Calculator() {
                     onClick={() => {
                       if (typeof item === "string") {
                         if (item === "=") {
-                          handleCalculate();
+                          handleCalculate(item);
                         } else if (item === "AC") {
                           handleClear();
                         } else {
@@ -303,7 +305,7 @@ export default function Calculator() {
                     onClick={() => {
                       if (typeof item === "string") {
                         if (item === "=") {
-                          handleCalculate();
+                          handleCalculate(item);
                         } else if (item === "AC") {
                           handleClear();
                         } else {

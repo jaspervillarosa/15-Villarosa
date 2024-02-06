@@ -256,11 +256,12 @@ button:focus-visible {
 }
 .homeContent {
   border: solid pink;
-  padding-right: 0rem !important;
-  padding-left: 4rem;
-  padding-top: 2rem;
   text-align: left;
-  text-justify: inter-word;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: solid green !important;
+  color: #5B5E6E;
 }
 .homeContent h3 {
   font-size: 1.5rem !important;
@@ -307,14 +308,17 @@ button:focus-visible {
 .home-imgPhone {
   border: solid red;
   margin-left: 9.5rem;
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 .home-imgPhone2 {
   border: solid blue;
-  width: 555px;
+  width: 665px;
   height: auto;
   margin: 0;
+}
+.homeDesignBottomContent p{
+  
 }
 
 .flip-box {
@@ -605,14 +609,14 @@ button:focus-visible {
   color: gray;
 }
 .calculator-inputContent {
-  opacity: 0.65;
+  /* opacity: 0.65; */
   width: 100% !important;
   padding-top: 1rem;
   padding-bottom: 0rem !important;
   font-size: 3rem;
   border-radius: 10px 10px 0px 0px !important;
   text-align: right !important;
-  background-color: black;
+  background-color: #57514E;
   color: white !important;
   font-weight: 200;
 }
@@ -652,17 +656,17 @@ button:focus-visible {
   border-radius: 1%;
 }
 .calculator-Secondary {
-  background-color: #ff9500;
+  background-color: #FE9E0B;
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
 }
 .calculatorGray {
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
-  background-color: #505050;
+  background-color: #68625E;
 }
 .calculatorDark {
-  background-color: gray;
+  background-color: #817C7B;
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
 }

@@ -1,28 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
 import Footer from "../components/Footer";
-import HomeNav from "../components/HomeNav";
-
-interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address: {
-    street: string;
-    suite: string;
-    city: string;
-    zipcode: string;
-  };
-  company: {
-    name: string;
-    catchPhrase: string;
-    bs: string;
-  };
-}
+import UserCard from "../components/UserCard";
 
 export default function JSON() {
-  const [userData, setUserData] = useState<User[]>([]);
+  const [userData, setUserData] = useState<[] | null >(null);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -31,35 +13,11 @@ export default function JSON() {
       .catch((error) => console.log("Error Fetching the data: ", error));
   }, []);
 
-  if (userData.length === 0) {
+  if (userData?.length === 0) {
     return <div></div>;
   }
-
-  const randomProfilePhotos = [
-    "src/image/img1.jpg",
-    "src/image/img2.jpg",
-    "src/image/img3.jpg",
-    "src/image/img4.avif",
-    "src/image/img5.jpeg",
-    "src/image/img6.avif",
-    "src/image/img7.avif",
-    "src/image/img8.jpeg",
-    "src/image/img9.avif",
-    "src/image/img10.avif",
-  ];
-
-  // Shuffle the array using Fisher-Yates algorithm
-  const shuffledProfilePhotos = randomProfilePhotos.slice();
-  for (let i = shuffledProfilePhotos.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledProfilePhotos[i], shuffledProfilePhotos[j]] = [
-      shuffledProfilePhotos[j],
-      shuffledProfilePhotos[i],
-    ];
-  }
-
     // Filter and get only the 9th user
-    const firstNineUser = userData.slice(0,9);
+    const firstNineUser = userData?.slice(0,9);
   return (
     <div className="json-Main">
       <div className="hobby-Innermain">
@@ -102,48 +60,8 @@ export default function JSON() {
           <h1>USER INFORMATION</h1>
         </div> */}
         <div className="json-insideMain">
-          {firstNineUser.map((user, index) => (
-            <>
-              <Card className="json-Card" style={{ width: "18rem" }}>
-                <Card.Body>
-                  <div className="JSON-userProfile">
-                    <div className="JSON-profileImage">
-                      <img
-                        src={
-                          shuffledProfilePhotos[
-                            index % shuffledProfilePhotos.length
-                          ]
-                        }
-                        alt={`Profile ${user.id}`}
-                      />
-                    </div>
-                    <div className="JSON-otherProfile">
-                      <Card.Title>{user.name}</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        Username: {user.username}
-                      </Card.Subtitle>
-                    </div>
-                  </div>
-                  <div className="hello">
-                    <h1>
-                      Employed at {user.company.name}, {user.name} is recognized
-                      as {user.company.catchPhrase} within the domain of{" "}
-                      {user.company.bs}.
-                    </h1>
-                    <br />
-                    <br />
-                    <h5>Find out more ⭢</h5>
-                  </div>
-                  <div className="cardInnerContainer">
-                    <Card.Text>Email: {user.email}</Card.Text>
-                    <Card.Text>Street: {user.address.street}</Card.Text>
-                    <Card.Text>Suite: {user.address.suite}</Card.Text>
-                    <Card.Text>City: {user.address.city}</Card.Text>
-                    <Card.Text>Zipcode: {user.address.zipcode}</Card.Text>
-                  </div>
-                </Card.Body>
-              </Card>
-            </>
+          {firstNineUser?.map((user, index) => (
+                <UserCard key={index} user={user}/>
           ))}
         </div>
       </div>
@@ -151,7 +69,6 @@ export default function JSON() {
         <img src="src/image/calculatorbg.png" alt="" />
       </div>
       <Footer></Footer>
-      <HomeNav></HomeNav>
     </div>
   );
 }
