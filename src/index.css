@@ -96,7 +96,6 @@ button:focus-visible {
   .homeTitle {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    border: solid green;
     width: 40% !important;
     display: flex;
     justify-content: center;
@@ -112,13 +111,11 @@ button:focus-visible {
     margin-top: 4rem !important;
   }
   .home-imgPhone {
-    border: solid red;
     margin: auto !important ;
     width: 300px !important;
     height: auto;
   }
   .home-imgPhone2 {
-    border: solid blue;
     width: 560px;
     height: auto;
     margin: 0;
@@ -159,13 +156,11 @@ button:focus-visible {
 
   .home-myHobbies {
     width: 100% !important;
-    border: solid green;
     margin-left: 0rem !important;
   }
   .hobby-Footer {
     display: flex;
     flex-direction: column;
-    border: solid orange;
     margin: auto;
     width: 80%;
     align-items: left !important;
@@ -174,43 +169,38 @@ button:focus-visible {
   .hobby-Footer {
     display: flex;
     gap: 4rem;
-    border: solid blue;
     padding-top: 6rem;
     padding-bottom: 2rem;
   }
   .hobby-Footer {
     display: flex;
     gap: 0rem !important;
-    border: solid blue;
     margin: auto;
     width: 80%;
   }
   .hobby-Footer div {
-    border: solid violet;
     width: 100%;
     height: 0rem !important;
     padding-top: 0rem !important;
     padding-bottom: 3rem !important;
   }
-  .homeBottomUpper{
+  .homeBottomUpper {
     margin-top: 4rem !important;
     margin: auto;
     width: 46% !important;
     text-align: left !important;
     margin-bottom: 6rem !important;
   }
-  .homeBottomImg img{
+  .homeBottomImg img {
     width: 600px !important;
     height: 350px;
   }
-  .homeBottomImg{
+  .homeBottomImg {
     margin-bottom: 2rem !important;
   }
-  
 }
 
 .home-Main {
-  border: solid pink;
   height: auto;
   display: flex;
   justify-content: center;
@@ -218,7 +208,6 @@ button:focus-visible {
   width: 100%;
 }
 .home-Headline {
-  border: solid orange;
   width: 100% !important;
   display: flex;
   justify-content: center;
@@ -229,7 +218,6 @@ button:focus-visible {
 .homeTitle {
   padding-top: 2rem;
   padding-bottom: 3rem;
-  border: solid green;
   width: 25%;
   display: flex;
   justify-content: center;
@@ -245,30 +233,25 @@ button:focus-visible {
   padding-top: 6rem;
   margin: auto;
   width: 80%;
-  border: solid yellow;
   display: flex;
   margin-bottom: 10rem;
 }
 .home-myHobbies {
   margin-left: 8rem;
   width: 60%;
-  border: solid pink;
 }
 .homeContent {
-  border: solid pink;
   text-align: left;
   padding-left: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
-  border: solid green !important;
-  color: #5B5E6E;
+  color: #5b5e6e;
 }
 .homeContent h3 {
   font-size: 1.5rem !important;
 }
 
 .home-innerMain {
-  border: solid blue;
   margin: auto;
   padding: auto;
   width: 100%;
@@ -306,19 +289,19 @@ button:focus-visible {
   width: 50%;
 }
 .home-imgPhone {
-  border: solid red;
   margin-left: 9.5rem;
   width: 350px;
   height: auto;
 }
 .home-imgPhone2 {
-  border: solid blue;
   width: 665px;
   height: auto;
   margin: 0;
 }
-.homeDesignBottomContent p{
-  
+.homeDesignBottomContent p {
+  color: #5b5e6e;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .flip-box {
@@ -353,7 +336,7 @@ button:focus-visible {
   transform: rotateY(180deg);
 }
 
-.homeBottomUpper{
+.homeBottomUpper {
   margin-top: 4rem !important;
   margin: auto;
   width: 50%;
@@ -364,7 +347,6 @@ button:focus-visible {
 /* *********CALCULATOR************** */
 @media (max-width: 1000px) {
   .calculator-Main {
-    border: solid red;
     height: auto;
     display: flex;
     justify-content: center;
@@ -384,7 +366,6 @@ button:focus-visible {
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    border: solid orange;
     width: 100% !important;
     align-items: center;
     background-color: #171717;
@@ -408,11 +389,7 @@ button:focus-visible {
     color: white !important;
   }
   .calculator-Input {
-    border: solid red;
     width: 100%;
-  }
-  .calculatorContainer {
-    border: solid red !important;
   }
   .calculator-UI {
     display: none;
@@ -435,7 +412,6 @@ button:focus-visible {
     width: calc(25%) !important;
     padding-block: 0.5rem;
     border-radius: 1%;
-    border-color: solid black;
   }
 
   .calculator-First {
@@ -463,42 +439,37 @@ button:focus-visible {
     text-align: right;
   }
 
-  .calculatorIcon{
+  .calculatorIcon {
     padding-top: 4rem !important;
   }
   .toolTip {
     cursor: pointer;
     z-index: 20;
     padding: 0;
-    border: solid violet !important;
     position: relative !important;
   }
-  .toolTip .toolTipDiv{
-       transform: translate(23.5%, 350%) !important;
+  .toolTip .toolTipDiv {
+    transform: translate(23.5%, 350%) !important;
   }
-  .calculator-imgDiv{
+  .calculator-imgDiv {
     position: relative;
     padding-block: 2rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red !important;
     position: relative !important;
   }
-  .calculator-imgDiv img{
-    border: solid green !important;
+  .calculator-imgDiv img {
     width: 40px !important;
     height: 40px !important;
   }
-  .toolTip img{
+  .toolTip img {
     position: absolute !important;
-    border: solid blue !important;
   }
-  .toolTip img{
-    transform: translate(-320%, 80%) !important; 
+  .toolTip img {
+    transform: translate(-320%, 80%) !important;
   }
-  .tooltipText{
-    border: solid red !important;
+  .tooltipText {
     background-color: #353839;
     padding-block: 0.25rem;
     padding-inline: 0.75rem;
@@ -510,7 +481,7 @@ button:focus-visible {
     border-radius: 7px;
     left: 100%;
   }
-  .tooltipText::before{
+  .tooltipText::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -518,31 +489,29 @@ button:focus-visible {
     transform: translateX(-980%) !important;
     border: 15px solid;
     border-color: #353839 #3530 #3530;
-  } 
-  .toolTip:hover .tooltipText{
+  }
+  .toolTip:hover .tooltipText {
     cursor: pointer;
     visibility: visible;
     opacity: 1;
-  } 
-  .calculatorLaptop{
+  }
+  .calculatorLaptop {
     height: 500px !important;
     width: 650px !important;
     z-index: 1;
   }
-  .calculator-largeContainer{
-    border: solid green !important;
+  .calculator-largeContainer {
     display: flex;
     flex-direction: column !important;
     align-items: center;
   }
-  .calculator-largeContainer .calculator-rightDesign{
+  .calculator-largeContainer .calculator-rightDesign {
     z-index: 20;
     position: absolute;
   }
-  .calculator-largeContainer .calculator-leftDesign{
+  .calculator-largeContainer .calculator-leftDesign {
     z-index: 20;
     position: absolute;
-  
   }
   .calculator-largeContainer .calculatorSideDesign {
     visibility: hidden;
@@ -550,7 +519,7 @@ button:focus-visible {
     height: 350px;
     transform: translate(0px, -220px);
   }
-  .calculator-innerMain-Main{
+  .calculator-innerMain-Main {
     z-index: 10;
     position: fixed;
     background-color: white !important;
@@ -559,18 +528,15 @@ button:focus-visible {
     padding-bottom: 40rem;
     padding-top: 2rem !important;
   }
-  
 }
 
 .calculator-Main {
-  border: solid red;
   height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .calculator-innerMain {
-  border: solid green !important;
   margin: auto;
   border: transparent !important;
   padding: auto;
@@ -580,7 +546,7 @@ button:focus-visible {
   align-items: center;
   z-index: 1;
 }
-.calculator-innerMain-Main{
+.calculator-innerMain-Main {
   z-index: 10;
   position: fixed;
   background-color: white !important;
@@ -594,7 +560,6 @@ button:focus-visible {
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  border: solid orange;
   width: 100% !important;
   align-items: center;
   background-color: #171717;
@@ -616,16 +581,12 @@ button:focus-visible {
   font-size: 3rem;
   border-radius: 10px 10px 0px 0px !important;
   text-align: right !important;
-  background-color: #57514E;
+  background-color: #57514e;
   color: white !important;
   font-weight: 200;
 }
 .calculator-Input {
-  border: solid red;
   width: 100%;
-}
-.calculatorContainer {
-  border: solid red !important;
 }
 .calculator-UI2 {
   display: none;
@@ -647,7 +608,6 @@ button:focus-visible {
   width: calc(10%);
   padding-block: 0.5rem;
   border-radius: 1%;
-  border-color: solid black;
 }
 
 .calculator-First {
@@ -656,17 +616,17 @@ button:focus-visible {
   border-radius: 1%;
 }
 .calculator-Secondary {
-  background-color: #FE9E0B;
+  background-color: #fe9e0b;
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
 }
 .calculatorGray {
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
-  background-color: #68625E;
+  background-color: #68625e;
 }
 .calculatorDark {
-  background-color: #817C7B;
+  background-color: #817c7b;
   border-top: 1px solid #1c1c1c;
   border-right: 1px solid #1c1c1c;
 }
@@ -675,7 +635,7 @@ button:focus-visible {
   text-align: right;
 }
 /* start here  */
-.calculatorIcon{
+.calculatorIcon {
   padding-top: 4rem !important;
 }
 
@@ -683,41 +643,34 @@ button:focus-visible {
   cursor: pointer;
   z-index: 20;
   padding: 0;
-  border: solid violet !important;
   position: relative !important;
   transform: translate(-1%, -500%);
 }
-.toolTip .toolTipDiv{
-  border: solid blue;
+.toolTip .toolTipDiv {
   transform: translate(31%, 350%);
 }
 
-.calculator-imgDiv{
-  border: solid pink !important;
+.calculator-imgDiv {
   transform: translateY(100%) !important;
   position: absolute;
   padding-block: 2rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid red !important;
   position: relative !important;
 }
 
-.calculator-imgDiv img{
-  border: solid green !important;
+.calculator-imgDiv img {
   width: 40px !important;
   height: 40px !important;
 }
-.toolTip img{
+.toolTip img {
   position: absolute;
-  border: solid blue !important;
 }
-.toolTip img{
-  transform: translate(-320%, 80%) !important; 
+.toolTip img {
+  transform: translate(-320%, 80%) !important;
 }
-.tooltipText{
-  border: solid red !important;
+.tooltipText {
   background-color: #353839;
   padding-block: 0.25rem;
   padding-inline: 0.75rem;
@@ -729,7 +682,7 @@ button:focus-visible {
   border-radius: 7px;
   left: 100%;
 }
-.tooltipText::before{
+.tooltipText::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -737,129 +690,120 @@ button:focus-visible {
   transform: translateX(-1400%);
   border: 15px solid;
   border-color: #353839 #3530 #3530;
-} 
-.toolTip:hover .tooltipText{
+}
+.toolTip:hover .tooltipText {
   cursor: pointer;
   visibility: visible;
   opacity: 1;
-}  
-.calculatorLaptop{
+}
+.calculatorLaptop {
   height: 700px;
   width: 900px;
   z-index: 1;
 }
-.calculator-largeContainer{
-  border: solid green !important;
+.calculator-largeContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.calculator-largeContainer .calculator-rightDesign{
+.calculator-largeContainer .calculator-rightDesign {
   z-index: 20;
 }
-.calculator-largeContainer .calculator-leftDesign{
+.calculator-largeContainer .calculator-leftDesign {
   z-index: 20;
-
 }
 .calculator-largeContainer .calculatorSideDesign {
   width: 250px;
   height: 350px;
   transform: translate(0px, -220px);
 }
-.calculator-smButtons{
+.calculator-smButtons {
   color: black !important;
-  border: solid red !important;
   position: absolute;
   display: flex;
   gap: 0.45rem !important;
   padding-block: 0 !important;
   margin-left: 0.5rem;
-  margin-top: 0.25rem;
+  margin-top: 0.40rem;
   z-index: 100;
-
 }
-.calculator-smButtons h1{
+.calculator-smButtons h1 {
   font-size: 8px !important;
   visibility: hidden;
   transform: translateY(-50%);
-
 }
-.calculator-smButtons .calculator-innersmButtons{
+.calculator-smButtons .calculator-innersmButtons {
   border-radius: 50%;
   background-color: #808080;
   padding-inline: 4px;
   height: 12px;
   margin: auto !important;
 }
-.calculator-smButtons:hover > div:nth-child(1){
-  background-color: #FF5F57!important;
+.calculator-smButtons:hover > div:nth-child(1) {
+  background-color: #ff5f57 !important;
   cursor: pointer;
   visibility: visible;
 }
-.calculator-smButtons:hover > div:nth-child(2){ 
-  background-color: #FEBC2E !important;
+.calculator-smButtons:hover > div:nth-child(2) {
+  background-color: #febc2e !important;
   cursor: pointer;
   visibility: visible;
 }
-.calculator-smButtons:hover > div:nth-child(3){
-  background-color: #27C840 !important;
+.calculator-smButtons:hover > div:nth-child(3) {
+  background-color: #27c840 !important;
   cursor: pointer;
   visibility: visible;
 }
-.calculator-smButtons:hover h1{
+.calculator-smButtons:hover h1 {
   visibility: visible;
 }
-.calculator-innersmButtons1 h1{
+.calculator-innersmButtons1 h1 {
   color: #cb443d !important;
 }
-.calculator-innersmButtons2 h1{
+.calculator-innersmButtons2 h1 {
   color: #af8426 !important;
 }
-.calculator-innersmButtons3 h1{
+.calculator-innersmButtons3 h1 {
   color: #208a2f !important;
 }
 
 /* **********JSON*************** */
 @media only screen and (max-width: 800px) {
-  .userUpperDesign{
+  .userUpperDesign {
     margin-top: 4rem !important;
-    border: solid violet;
     object-fit: cover;
   }
-  .json-userInformationContent{
+  .json-userInformationContent {
     margin-top: 2rem;
-    border: solid red !important;
     margin-inline: auto;
     width: 80% !important;
     display: flex;
     flex-direction: column !important;
     margin-bottom: 4rem !important;
   }
-  .json-userInformationContent h1{
+  .json-userInformationContent h1 {
     padding-inline: 2rem;
     font-weight: 500;
     font-size: 2rem;
   }
-  .json-userInformationContent p{
+  .json-userInformationContent p {
     padding-inline: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2;
-    border: solid green !important;
-    color: #5B5E6E;
+    color: #5b5e6e;
   }
-  .userUpperDesign img{
+  .userUpperDesign img {
     width: 700px !important;
     height: 450px !important;
   }
-  .jsonUpperh1{
+  .jsonUpperh1 {
     padding-left: 0rem !important;
     text-align: left !important;
     width: 100% !important;
-    border: solid blue;
     margin-bottom: 3rem;
   }
-  .jsonUpperP{
+  .jsonUpperP {
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
@@ -869,58 +813,50 @@ button:focus-visible {
   }
 }
 .json-Main {
-  border: solid green;
   margin: auto;
 }
 /* start here  */
-.userUpperDesign{
-  border: solid violet;
+.userUpperDesign {
   object-fit: cover;
   margin-top: 4rem !important;
 }
-.json-userInformationContent{
-  border: solid red !important;
+.json-userInformationContent {
   margin-inline: auto;
   width: 80% !important;
   display: flex;
   margin-top: 4rem;
   margin-bottom: 4rem !important;
 }
-.json-userInformationContent h1{
+.json-userInformationContent h1 {
   font-weight: 500;
   font-size: 2rem;
   color: #323648;
   font-weight: 600;
-
 }
-.json-userInformationContent p{
+.json-userInformationContent p {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 2;
-  border: solid green !important;
-  color: #5B5E6E;
+  color: #5b5e6e;
 }
-.userUpperDesign img{
+.userUpperDesign img {
   width: 1425px;
   height: 800px;
 }
-.jsonUpperh1{
+.jsonUpperh1 {
   padding-left: 2rem;
   text-align: center !important;
   width: 40%;
-  border: solid blue;
 }
-.jsonUpperP{
+.jsonUpperP {
   width: 60%;
   padding-right: 10rem;
 }
 .JSON-innerContainer {
-  border: solid red;
   margin: auto;
   width: 80%;
 }
 .json-insideMain {
-  background-color: solid green !important;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -936,9 +872,9 @@ button:focus-visible {
   -webkit-backdrop-filter: blur(4.8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   opacity: 0.6;
-  transition: opacity .2s ease-out;
+  transition: opacity 0.2s ease-out;
 }
-.cardInnerContainer{
+.cardInnerContainer {
   margin-top: 1.5rem;
   line-height: 0.75;
   visibility: hidden !important;
@@ -946,53 +882,35 @@ button:focus-visible {
   opacity: 0;
   transition: opacity 1s ease; /* Add a transition for a smoother effect */
 }
-/* .cardInnerContainer::before{
-  border: solid red !important;
-} */
-.json-Card:hover .cardInnerContainer{
+.json-Card:hover .cardInnerContainer {
   visibility: visible !important;
   opacity: 1;
   cursor: pointer;
 }
-.json-Card:hover{
+.json-Card:hover {
   opacity: 1;
   color: black;
 }
-.hello{
+.hello {
   position: absolute;
   visibility: visible;
   line-height: 0.1;
   padding-right: 1rem;
   margin-right: 0.5rem;
 }
-.hello h1{
+.hello h1 {
   line-height: 1.25;
   font-weight: 400;
   font-size: 0.95rem;
 }
-.hello h5{
+.hello h5 {
   font-size: 0.85rem;
 }
-.json-Card:hover .hello{
+.json-Card:hover .hello {
   visibility: hidden;
   transition: opacity 2s ease;
   opacity: 0;
 }
-
-/* .tooltipText::before{
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%);
-  border: 15px solid;
-  border-color: #353839 #3530 #3530;
-}
-.toolTip:hover .tooltipText{
-  cursor: pointer;
-  visibility: visible;
-  opacity: 1;
-} */
 .JSON-profileImage {
   width: 60px;
   height: 60px;
@@ -1004,7 +922,7 @@ button:focus-visible {
   justify-content: center;
   overflow: hidden;
 }
-.JSON-profileImage img{
+.JSON-profileImage img {
   width: 60px;
   height: 60px;
   object-fit: cover;
@@ -1015,6 +933,21 @@ button:focus-visible {
   align-items: center;
   /* align-items: center; */
 }
+.jsonContainer {
+  position: relative;
+  padding-bottom: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.JSON-innerContainer {
+  position: relative;
+  width: 70%;
+  z-index: 5;
+}
+.userUpperDesign {
+  position: relative;
+  transform: translateY(-75%);
+  z-index: 1;
+}
 
 /* **********HOBBY************** */
 @media only screen and (max-width: 800px) {
@@ -1022,11 +955,9 @@ button:focus-visible {
     background-color: white;
   }
   .hobby-upperDiv {
-    border: solid red;
     background-color: white;
   }
   .hobby-innerUpperDiv {
-    border: solid orange;
     width: 45% !important;
   }
   .hobby-innerUpperDiv h1 {
@@ -1035,7 +966,6 @@ button:focus-visible {
   }
   .hobby1-imageContainer,
   .hobby2-imageContainer {
-    border: solid green;
     height: 400px !important;
     overflow: hidden;
     transition: 0.5s ease;
@@ -1048,9 +978,6 @@ button:focus-visible {
   .hobby2-imageContainer:hover {
     transform: scale(0.95);
   }
-  .hobbyCenter {
-    border: solid black !important;
-  }
   .hobbyCenter1,
   .hobbyCenter2,
   .hobbyCenter3 {
@@ -1058,14 +985,12 @@ button:focus-visible {
     width: 80% !important;
     padding-top: 1rem;
     padding-bottom: 3rem !important;
-    border: solid blue;
   }
   .hobbyh1-1,
   .hobbyh1-2,
   .hobbyh1-3 {
     font-family: sans-serif;
     font-size: 1.5rem !important;
-    /* font-weight: bold; */
   }
   .hobbyh2-1,
   .hobbyh2-2,
@@ -1081,8 +1006,6 @@ button:focus-visible {
     height: 400px !important;
     transform: scale(1);
     cursor: pointer;
-    /* object-fit: cover !important; */
-    border: solid orange;
   }
   .hobby-Img1:hover,
   .hobby-Img2:hover {
@@ -1093,11 +1016,9 @@ button:focus-visible {
     width: 80%;
     display: flex;
     flex-direction: column !important;
-    border-color: pink;
     gap: 2rem;
   }
   .hobbyLower-Innerdiv {
-    border: solid violet;
     width: 100%;
   }
 
@@ -1126,12 +1047,10 @@ button:focus-visible {
   .hobby-Footer {
     display: flex;
     gap: 4rem;
-    border: solid green;
     margin: auto;
     width: 80%;
   }
   .hobby-Footer h4 {
-    border: solid orange;
     font-size: 1rem;
     font-family: sans-serif;
   }
@@ -1143,7 +1062,6 @@ button:focus-visible {
   }
 
   .hobby-Footer div {
-    border: solid violet;
     width: 100%;
     padding-top: 10rem;
     padding-bottom: 5rem;
@@ -1156,10 +1074,8 @@ button:focus-visible {
   .hobby-smImg2 {
     height: 400px !important;
     width: 400px !important;
-    border: solid red;
   }
   .hobby-Img3 {
-    border: solid orange;
     width: 100% !important;
     height: 350px !important;
     margin-bottom: 6rem;
@@ -1167,22 +1083,18 @@ button:focus-visible {
 }
 
 .hobby-Main {
-  border: solid red;
   height: auto;
 }
 
 .hobby-Innermain {
   width: 80%;
   margin: auto;
-  border: solid blue !important;
   margin: auto;
   padding: auto;
-  /* width: 100%; */
   display: flex;
   justify-content: flex-end;
 }
 .hobby-Nav {
-  border: solid pink;
   padding-top: 6rem;
   font-family: sans-serif;
 }
@@ -1210,12 +1122,7 @@ button:focus-visible {
 .hobby-Calculator:after {
   background-color: transparent;
 }
-
-.hobby-upperDiv {
-  border: solid red;
-}
 .hobby-innerUpperDiv {
-  border: solid orange;
   width: 30%;
 }
 
@@ -1225,7 +1132,6 @@ button:focus-visible {
 }
 .hobby1-imageContainer,
 .hobby2-imageContainer {
-  border: solid green;
   width: auto;
   height: 800px;
   overflow: hidden;
@@ -1239,9 +1145,6 @@ button:focus-visible {
 .hobby2-imageContainer:hover {
   transform: scale(0.95);
 }
-.hobbyCenter {
-  border: solid black !important;
-}
 .hobbyCenter1,
 .hobbyCenter2,
 .hobbyCenter3 {
@@ -1249,7 +1152,6 @@ button:focus-visible {
   width: 90%;
   padding-top: 1rem;
   padding-bottom: 5rem;
-  border: solid blue;
 }
 .hobbyh1-1,
 .hobbyh1-2,
@@ -1268,8 +1170,6 @@ button:focus-visible {
   transition: 0.5s ease;
   transform: scale(1);
   cursor: pointer;
-  /* object-fit: cover !important; */
-  border: solid orange;
 }
 .hobby-Img1,
 .hobby-Img2 {
@@ -1277,7 +1177,6 @@ button:focus-visible {
   height: 750px;
 }
 .hobby-Img3 {
-  border: solid orange;
   width: 100%;
   height: 700px;
   margin-bottom: 6rem;
@@ -1291,12 +1190,10 @@ button:focus-visible {
   margin: auto;
   width: 80%;
   display: flex;
-  border-color: pink;
   gap: 2rem;
 }
 
 .hobbyLower-Innerdiv {
-  border: solid violet;
   width: 100%;
 }
 
@@ -1325,12 +1222,10 @@ button:focus-visible {
 .hobby-Footer {
   display: flex;
   gap: 4rem;
-  border: solid green;
   margin: auto;
   width: 80%;
 }
 .hobby-Footer h4 {
-  border: solid orange;
   font-size: 1rem;
   font-family: sans-serif;
 }
@@ -1342,7 +1237,6 @@ button:focus-visible {
 }
 
 .hobby-Footer div {
-  border: solid violet;
   width: 100%;
   padding-top: 10rem;
   padding-bottom: 5rem;
@@ -1351,7 +1245,6 @@ button:focus-visible {
 .JSON-userProfile {
   display: flex;
   align-items: center;
-  /* align-items: center; */
 }
 .hobby-labelName a {
   color: black;
@@ -1361,12 +1254,10 @@ button:focus-visible {
 .hobby-smImg2 {
   height: 550px !important;
   width: 550px !important;
-  border: solid red;
 }
 /* *******NavBar***************** */
 @media only screen and (max-width: 800px) {
-  .fixed-navbar{
-    border: solid red;
+  .fixed-navbar {
     overflow: hidden;
     background-color: transparent;
     position: fixed;
@@ -1377,7 +1268,7 @@ button:focus-visible {
     flex-direction: column;
     z-index: 1000;
   }
-  .innerFixed-navbar{
+  .innerFixed-navbar {
     background-color: #333; /* Green */
     border: none;
     color: white;
@@ -1389,20 +1280,17 @@ button:focus-visible {
     font-size: 8px !important;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 50%;  
+    border-radius: 50%;
     padding-inline: 2rem;
     transform: translateX(540%) !important;
-  
   }
-  .navHouse{
+  .navHouse {
     color: white !important;
     height: 20px !important;
     width: 20px !important;
-  
   }
 }
-.fixed-navbar{
-  border: solid red;
+.fixed-navbar {
   overflow: hidden;
   background-color: transparent;
   position: fixed;
@@ -1413,12 +1301,11 @@ button:focus-visible {
   flex-direction: column;
   z-index: 1000;
 }
-.fixed-navbar:hover{
+.fixed-navbar:hover {
   opacity: 0.6;
   transition: opacity 1s ease-in-out;
-
 }
-.innerFixed-navbar{
+.innerFixed-navbar {
   background-color: #333; /* Green */
   border: none;
   color: white;
@@ -1430,12 +1317,11 @@ button:focus-visible {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 50%;  
+  border-radius: 50%;
   padding-inline: 2rem;
   transform: translateX(1300%);
-
 }
-.navHouse{
+.navHouse {
   color: white !important;
   height: 30px;
   width: 30px;

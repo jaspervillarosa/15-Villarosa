@@ -55,6 +55,7 @@ export default function JSON() {
           </p>
         </div>
       </div>
+      <div className="jsonContainer">
       <div className="JSON-innerContainer">
         {/* <div className="title">
           <h1>USER INFORMATION</h1>
@@ -67,6 +68,7 @@ export default function JSON() {
       </div>
       <div className="userUpperDesign">
         <img src="src/image/calculatorbg.png" alt="" />
+      </div>
       </div>
       <Footer></Footer>
     </div>
