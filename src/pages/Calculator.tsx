@@ -5,23 +5,11 @@ import HomeNav from "../components/HomeNav";
 
 export default function Calculator() {
   const [formVisible, setFormVisible] = useState(false);
-  const [formSmaller, setFormSmaller] = useState(false);
-
-
-const turnSmallForm = () => {
-    console.log("Turning small form...");
-    setFormSmaller(true);
-  };
-console.log("form is", formSmaller)
-
-const undoSmallForm = () =>{
-    setFormSmaller(false);
-  }
 
   const openForm = () => {
     setFormVisible(true);
   };
-  console.log("form was", formVisible)
+  console.log("form was", formVisible);
 
   const closeForm = () => {
     setFormVisible(false);
@@ -112,8 +100,7 @@ const undoSmallForm = () =>{
         </div>
       </div>
 
-      {formVisible && 
-      (
+      {formVisible && (
         <div className="calculator-innerMain calculator-innerMain-Main">
           <div className="calculator-UI">
             <div className="calculator-Input">
@@ -127,10 +114,7 @@ const undoSmallForm = () =>{
                 <div className="calculator-innersmButtons calculator-innersmButtons2">
                   <h1>-</h1>
                 </div>
-                <div 
-                className="calculator-innersmButtons calculator-innersmButtons3"
-                onClick={turnSmallForm}
-                >
+                <div className="calculator-innersmButtons calculator-innersmButtons3">
                   <h1>+</h1>
                 </div>
               </div>
@@ -263,7 +247,7 @@ const undoSmallForm = () =>{
             </div>
           </div>
 
-            <div className="calculator-UI2">
+          <div className="calculator-UI2">
             <div className="calculator-Input">
               <div className="calculator-smButtons">
                 <div
@@ -275,9 +259,7 @@ const undoSmallForm = () =>{
                 <div className="calculator-innersmButtons calculator-innersmButtons2">
                   <h1>-</h1>
                 </div>
-                <div 
-                  className="calculator-innersmButtons calculator-innersmButtons3"
-                  >
+                <div className="calculator-innersmButtons calculator-innersmButtons3">
                   <h1>+</h1>
                 </div>
               </div>
@@ -349,93 +331,6 @@ const undoSmallForm = () =>{
           </div>
         </div>
       )}
-       {formSmaller && (
-            <div className="calculator-UI2">
-            <div className="calculator-Input">
-              <div className="calculator-smButtons">
-                <div
-                  className="calculator-innersmButtons calculator-innersmButtons1"
-                  onClick={closeForm}
-                >
-                  <h1>x</h1>
-                </div>
-                <div className="calculator-innersmButtons calculator-innersmButtons2" onClick={undoSmallForm}>
-                  <h1>-</h1>
-                </div>
-                <div 
-                  className="calculator-innersmButtons calculator-innersmButtons3"
-                  onClick={turnSmallForm}
-                  >
-                  <h1>+</h1>
-                </div>
-              </div>
-              <Form.Control
-                type="text"
-                value={result !== null ? result : input || "0"}
-                readOnly
-                aria-label="Result"
-                className="calculator-inputContent" // Align input text to the right
-              />
-            </div>
-
-            <div className="calculator-Numbers">
-              <div className="calculator-buttonNumber">
-                {[
-                  "AC",
-                  "+/-",
-                  "%",
-                  "/",
-                  7,
-                  8,
-                  9,
-                  "*",
-                  4,
-                  5,
-                  6,
-                  "-",
-                  1,
-                  2,
-                  3,
-                  "+",
-                  "",
-                  0,
-                  ".",
-                  "=",
-                ].map((item, index) => (
-                  <button
-                    key={item}
-                    className={
-                      item === "/" ||
-                      item === "*" ||
-                      item === "-" ||
-                      item === "+" ||
-                      (item === "=" && index % 4 === 3)
-                        ? "calculator-Secondary calculator-Last"
-                        : item === "AC" || item === "+/-" || item === "%"
-                        ? "calculatorGray calculator-Last"
-                        : "calculatorDark calculator-First"
-                    }
-                    onClick={() => {
-                      if (typeof item === "string") {
-                        if (item === "=") {
-                          handleCalculate(item);
-                        } else if (item === "AC") {
-                          handleClear();
-                        } else {
-                          handleButtonClick(item);
-                        }
-                      } else {
-                        handleButtonClick(item.toString());
-                      }
-                    }}
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
 
       {/* Calculator UI section */}
       <div className="calculator-innerMain">
