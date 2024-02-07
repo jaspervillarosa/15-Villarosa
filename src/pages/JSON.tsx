@@ -67,7 +67,7 @@ export default function JSON() {
         </div>
       </div>
       <div className="userUpperDesign">
-        <img src="src/image/calculatorbg.png" alt="" />
+        <img src="public/image/calculatorbg.png" alt="" />
       </div>
       </div>
       <Footer></Footer>

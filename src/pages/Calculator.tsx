@@ -65,7 +65,7 @@ export default function Calculator() {
         <div className="calculator-leftDesign">
           <img
             className="calculatorSideDesign"
-            src="src/image/calculatorDesign2.png"
+            src="public/image/calculatorDesign2.png"
             alt=""
           />
         </div>
@@ -73,7 +73,7 @@ export default function Calculator() {
           <div className="calculatorIcon">
             <img
               className="calculatorLaptop"
-              src="src/image/macLaptop2.jpeg"
+              src="public/image/macLaptop2.jpeg"
               alt=""
             />
             <div className="toolTip">
@@ -84,7 +84,7 @@ export default function Calculator() {
                 <img
                   className="openButton"
                   onClick={openForm}
-                  src="src/image/calc_icon.png"
+                  src="public/image/calc_icon.png"
                   alt="HTML tutorial"
                 />
               </div>
@@ -94,7 +94,7 @@ export default function Calculator() {
         <div className="calculator-rightDesign">
           <img
             className="calculatorSideDesign"
-            src="src/image/calculatorDesign1.png"
+            src="public/image/calculatorDesign1.png"
             alt=""
           />
         </div>

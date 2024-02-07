@@ -49,7 +49,7 @@ export default function MyHobby() {
           <div className="hobby1-imageContainer ">
             <img
               className="hobby-Img1 hobby-smImg1"
-              src="src/image/graphics4.png"
+              src="public/image/graphics4.png"
               alt="image"
             />
           </div>
@@ -66,7 +66,7 @@ export default function MyHobby() {
           <div className="hobby2-imageContainer ">
             <img
               className="hobby-Img2 hobby-smImg2"
-              src="src/image/graphics7.png"
+              src="public/image/graphics7.png"
               alt=""
             />
           </div>
