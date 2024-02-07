@@ -36,7 +36,7 @@ export default function home() {
                   Let's chat — jvillarosa@up.edu.ph
                   <br></br>
                   <br />
-                  <a href="./MyHobby">Learn More</a>
+                  <a href="./MyHobby">Learn More -</a>
                 </p>
               </div>
             </div>

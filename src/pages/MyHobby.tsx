@@ -17,7 +17,7 @@ export default function MyHobby() {
       </div>
 
       <div className="hobby1-imageContainer">
-        <img className="hobby-Img1" src="src/image/graphics1.png" alt="image" />
+        <img className="hobby-Img1" src="/image/graphics1.png" alt="image" />
       </div>
 
       <div className="hobbyCenter1">
@@ -30,7 +30,7 @@ export default function MyHobby() {
       </div>
 
       <div className="hobby2-imageContainer">
-        <img className="hobby-Img2" src="src/image/graphics2.png" alt="" />
+        <img className="hobby-Img2" src="/image/graphics2.png" alt="" />
       </div>
 
       <div className="hobbyCenter2">
@@ -41,7 +41,7 @@ export default function MyHobby() {
       </div>
 
       <div className="hobby3-imageContainer">
-        <img className="hobby-Img3" src="src/image/graphics3.png" alt="" />
+        <img className="hobby-Img3" src="/image/graphics3.png" alt="" />
       </div>
 
       <div className="hobby-lowerDiv">

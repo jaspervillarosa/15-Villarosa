@@ -9,11 +9,11 @@ export default function Footer() {
                   <h5>Digital Product Designer  </h5>
             </div>
             <div className='hobbyContact hobby-smallFooter'>
-                  <h4>Contact —— </h4>
+                  <h4>Contact — </h4>
                   <h5>Digital Product Designer</h5>
             </div>
             <div className='hobbySocial hobby-smallFooter'>
-                  <h4>Social —— </h4>
+                  <h4>Social — </h4>
                   <h5>Tumblr, Twitter, Linkedin</h5>
             </div>
       </footer>
