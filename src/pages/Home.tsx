@@ -46,14 +46,14 @@ export default function home() {
                   <div className="flip-box-front">
                     <img
                       className="home-imgPhone"
-                      src="public/image/phoneGraphics.png"
+                      src="/image/phoneGraphics.png"
                       alt=""
                     />
                   </div>
                   <div className="flip-box-back">
                     <img
                       className="home-imgPhone2"
-                      src="public/image/iphone.webp"
+                      src="/image/iphone.webp"
                       alt=""
                     />
                   </div>
@@ -83,7 +83,7 @@ export default function home() {
               </div>
             </div>
             <div className="homeBottomImg">
-                <img src="public/image/homeImg1.png" alt="" />
+                <img src="/image/homeImg1.png" alt="" />
             </div>
           </div>
         </Col>

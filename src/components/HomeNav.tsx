@@ -8,9 +8,7 @@ export default function HomeNav() {
       <div className="fixed-navbar">
         <a href="/">
           <div className="innerFixed-navbar">
-            <a href="/">
               <FontAwesomeIcon className="navHouse" icon={faHouse} />
-            </a>
           </div>
         </a>
       </div>

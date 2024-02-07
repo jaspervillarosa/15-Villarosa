@@ -23,16 +23,16 @@ import { Card } from 'react-bootstrap'
       }
 
       const randomProfilePhotos = [
-        "src/image/img1.jpg",
-        "src/image/img2.jpg",
-        "src/image/img3.jpg",
-        "src/image/img4.avif",
-        "src/image/img5.jpeg",
-        "src/image/img6.avif",
-        "src/image/img7.avif",
-        "src/image/img8.jpeg",
-        "src/image/img9.avif",
-        "src/image/img10.avif",
+        "/image/img1.jpg",
+        "/image/img2.jpg",
+        "/image/img3.jpg",
+        "/image/img4.avif",
+        "/image/img5.jpeg",
+        "/image/img6.avif",
+        "/image/img7.avif",
+        "/image/img8.jpeg",
+        "/image/img9.avif",
+        "/image/img10.avif",
       ];
     
       // Shuffle the array using Fisher-Yates algorithm
