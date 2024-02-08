@@ -10,8 +10,8 @@ export default function MyHobby() {
       <div className="hobby-upperDiv">
         <div className="hobby-innerUpperDiv">
           <h1>
-            Jasper is interested in digital product designing living in <del>Las Piñas</del>{" "}
-            city
+            Jasper is interested in digital product designing living in{" "}
+            <del>Las Piñas</del> city
           </h1>
         </div>
       </div>

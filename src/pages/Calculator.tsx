@@ -22,13 +22,9 @@ export default function Calculator() {
     setInput((prevInput) => prevInput + value);
   };
 
-  const handleCalculate = (value: any) => {
+  const handleCalculate = () => {
     try {
-      if (/[+\-*/]$/.test(input)) {
-        setInput((prevInput) => prevInput.slice(0, -1) + value);
-      } else {
-        setResult(eval(input)); // Evaluate the input expression
-      }
+      setResult(eval(input));
     } catch (error) {
       setResult(null);
     }
@@ -229,7 +225,7 @@ export default function Calculator() {
                     onClick={() => {
                       if (typeof item === "string") {
                         if (item === "=") {
-                          handleCalculate(item);
+                          handleCalculate();
                         } else if (item === "AC") {
                           handleClear();
                         } else {
@@ -312,7 +308,7 @@ export default function Calculator() {
                     onClick={() => {
                       if (typeof item === "string") {
                         if (item === "=") {
-                          handleCalculate(item);
+                          handleCalculate();
                         } else if (item === "AC") {
                           handleClear();
                         } else {

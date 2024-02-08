@@ -1,17 +1,17 @@
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
-import Home from './pages/Home'
-import './index.css'
-import Calculator from './pages/Calculator'
-import JSON from './pages/JSON'
-import MyHobby from './pages/MyHobby'
-import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import "./index.css";
+import Calculator from "./pages/Calculator";
+import JSON from "./pages/JSON";
+import MyHobby from "./pages/MyHobby";
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode="wait">
         <Routes>
           <Route
             path="/"
@@ -25,8 +25,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               </motion.div>
             }
           />
-          <Route path="/calculator" 
-             element={
+          <Route
+            path="/calculator"
+            element={
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -35,29 +36,30 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 <Calculator />
               </motion.div>
             }
-            />
-          <Route 
-              path="/JSON" 
-              element={
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                 <JSON />
-                </motion.div>
-              }
           />
-          <Route path="/myHobby" 
-          element={
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
-             <MyHobby />
-            </motion.div>
-          }
+          <Route
+            path="/JSON"
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <JSON />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/myHobby"
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <MyHobby />
+              </motion.div>
+            }
           />
         </Routes>
       </AnimatePresence>
