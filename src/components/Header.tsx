@@ -11,7 +11,7 @@ export default function Header() {
           onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
         >
           <Nav.Item>
-            <Button className="hobby-Calculator" href="/Calculator">
+            <Button className="hobby-Calculator" href="/calculator">
               calculator
             </Button>
           </Nav.Item>
