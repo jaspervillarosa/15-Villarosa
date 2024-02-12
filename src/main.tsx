@@ -13,9 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
          <Route path='/' element={<Home/>}></Route>
-         <Route path='/calculator' element={<Calculator/>}></Route>
+         <Route path='/Calculator' element={<Calculator/>}></Route>
          <Route path='/JSON' element={<JSON/>}></Route>
-         <Route path='/myHobby' element={<MyHobby/>}></Route>
+         <Route path='/MyHobby' element={<MyHobby/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
