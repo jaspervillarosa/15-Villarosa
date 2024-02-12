@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Nav } from "react-bootstrap";
 import Footer from "../components/Footer";
 import UserCard from "../components/UserCard";
+import HomeNav from "../components/HomeNav";
 
 export default function JSON() {
   const [userData, setUserData] = useState<[] | null>(null);
@@ -71,6 +72,7 @@ export default function JSON() {
         </div>
       </div>
       <Footer></Footer>
+      <HomeNav></HomeNav>
     </div>
   );
 }
