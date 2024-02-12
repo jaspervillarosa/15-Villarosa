@@ -1,67 +1,76 @@
-import React, { useEffect, useState } from 'react'
-import { Card, Container, ListGroup } from 'react-bootstrap';
-
-
-interface User {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    address: {
-      street: string;
-      suite: string;
-      city: string;
-      zipcode: string;
-    };
-  }
+import React, { useEffect, useState } from "react";
+import { Button, Nav } from "react-bootstrap";
+import Footer from "../components/Footer";
+import UserCard from "../components/UserCard";
 
 export default function JSON() {
+  const [userData, setUserData] = useState<[] | null>(null);
 
-    const [userData, setUserData] = useState<User[]>([]);
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => setUserData(data))
+      .catch((error) => console.log("Error Fetching the data: ", error));
+  }, []);
 
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then((response) => response.json())
-        .then((data) => setUserData(data))
-        .catch((error) => console.log("Error Fetching the data: ", error))
-    }, []);
-
-    if (userData.length === 0){
-        return <div></div>
-    }
+  if (userData?.length === 0) {
+    return <div></div>;
+  }
+  // Filter and get only the 9th user
+  const firstNineUser = userData?.slice(0, 9);
   return (
-
-    <Container className="json-Main vw-100">
-         <div className='title'>
-            <h1>
-                USER INFORMATION
-            </h1>
+    <div className="json-Main">
+      <div className="hobby-Innermain">
+        <Nav
+          className="hobby-Nav"
+          activeKey="/home"
+          onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+        >
+          <Nav.Item>
+            <Button className="hobby-Calculator" href="/Calculator">
+              calculator
+            </Button>
+          </Nav.Item>
+          <Nav.Item>
+            <Button className="hobby-JSON" href="/JSON">
+              <del>JSON</del>
+            </Button>
+          </Nav.Item>
+        </Nav>
+      </div>
+      <div className="json-userInformationContent">
+        <div className="jsonUpperh1">
+          <h1>User Information & Background</h1>
         </div>
-    <div className="json-insideMain">
-    {userData.map((user) => (
-        <>
-        <Card className='json-Card' style={{width: "18rem"}}> 
-            <Card.Body>
-                    <Card.Title>{user.name}</Card.Title>
-                    <Card.Subtitle className='mb-2 text-muted'>
-                        Username: {user.username}
-                    </Card.Subtitle>
-                    <Card.Text>
-                        Email: {user.email}
-                    </Card.Text>
-                    <ListGroup className='List group-flush'>
-                        <ListGroup.Item>Street: {user.address.street}</ListGroup.Item>
-                        <ListGroup.Item>Suite: {user.address.suite}</ListGroup.Item>
-                        <ListGroup.Item>City: {user.address.city}</ListGroup.Item>
-                        <ListGroup.Item>Zipcode: {user.address.zipcode}</ListGroup.Item>
-            </ListGroup>
-            </Card.Body>
-        </Card>
-        </>
-        ))}
+        <div className="jsonUpperP">
+          <p>
+            This data-driven strategy fosters increased user engagement and
+            enables the formulation of impactful marketing strategies,
+            contributing to business growth. <br />
+            <br />
+            In personalized interactions, user information is invaluable in
+            e-commerce, social media, and online services, empowering businesses
+            to curate tailored content, offer individualized recommendations,
+            and deepen overall user satisfaction. <br />
+          </p>
+        </div>
+      </div>
+      <div className="jsonContainer">
+        <div className="JSON-innerContainer">
+          {/* <div className="title">
+          <h1>USER INFORMATION</h1>
+        </div> */}
+          <div className="json-insideMain">
+            {firstNineUser?.map((user, index) => (
+              <UserCard key={index} user={user} />
+            ))}
+          </div>
+        </div>
+        <div className="userUpperDesign">
+          <img src="/image/calculatorbg.png" alt="" />
+        </div>
+      </div>
+      <Footer></Footer>
     </div>
-    
-    </Container>
-   
-  )
+  );
 }
